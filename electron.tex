@@ -13,9 +13,13 @@
   \array{@{}l@{\quad}l@{}}%
 }
 \makeatother
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
 
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-%\renewcommand{\baselinestretch}{1.65}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=1cm]{geometry}
+%\renewcommand{\baselinestretch}{1.2}
 %\newcommand{\jj}{\righthyphenmin=20 \justifying}
 \usepackage{ragged2e}
 \justifying
@@ -289,7 +293,7 @@ $$-\frac{1}{\hbar^2}L^2=\frac{1}{\sin \theta}\frac{\partial}{\partial \theta}(\s
 The eigenvalues and eigenfunctions are following:
 $$L^2 f_l^m = \hbar^2l(l+1) f_l^m,$$
 $$L_z f_l^m = \hbar m f_l^m,$$
-where $f_l^m = Y_l^m$ - spherical garmonics, defined in \eqref{sph_garm}.
+where $f_l^m = Y_l^m$ - spherical harmonics, defined in \eqref{sph_garm}.
 
 
 
@@ -308,7 +312,7 @@ where $f_l^m = Y_l^m$ - spherical garmonics, defined in \eqref{sph_garm}.
 
 
 \subsection{Spin}
-In classical mechanics, an object's rotation around a fixed axis  is described by two kinds of angular momentum: orbital ($L = r \times p$), assosiated with the motion of the center of mass, and spin($S = I \omega$), assosiated with motion about the center of mass. An analogous things take place in quantum mechanics: in addition to orbital angular momentum, assosiated with the motion of electron around the nucleus (in case of hydrogen ), and which  described by spherical garmonics, but electron also carries another form of angular momentum, which has nothing to do with motion in space, but which is somewhat analogous to classical spin. Notice, that electron is a structless point particle, and its spin angular momentum cannot be decomposed into orbital one of constituent parts. So, elementary particles have intrinsic angular momentum $S$ and "extrinsic" angular momentum $L.$
+In classical mechanics, an object's rotation around a fixed axis  is described by two kinds of angular momentum: orbital ($L = r \times p$), associated with the motion of the center of mass, and spin($S = I \omega$), associated with motion about the center of mass. An analogous things take place in quantum mechanics: in addition to orbital angular momentum, associated with the motion of electron around the nucleus (in case of hydrogen ), and which  described by spherical harmonics, but electron also carries another form of angular momentum, which has nothing to do with motion in space, but which is somewhat analogous to classical spin. Notice, that electron is a structureless point particle, and its spin angular momentum cannot be decomposed into orbital one of constituent parts. So, elementary particles have intrinsic angular momentum $S$ and "extrinsic" angular momentum $L.$
 
 The existence of spin angular momentum was proven in experiments, for instance the Stern-Gerlach experiment.
 
@@ -320,7 +324,7 @@ The algebraic  theory of spin is the same as theory for orbital angular momentum
 %It follows that the eigenvectors satisfy
 %$$S^2 \ket{s ~m} = \hbar^2 s(s+1) \ket{s~m},$$
 %$$S_z \ket{s ~m} = \hbar m \ket{s~m}.$$
-But these time the eigenvectiors are not spherical garmonics (they are not functions of $\theta$ and $\phi$), so there is no reason to exclude half-integers values of $s$ and $m$:
+But these time the eigenvectiors are not spherical harmonics (they are not functions of $\theta$ and $\phi$), so there is no reason to exclude half-integers values of $s$ and $m$:
 $$s = 0, \frac{1}{2}, 1, ...;  ~ m = -s, -s+1,...,s-1, s. $$
 
 \subsubsection{Spin $\frac{1}{2}$}
@@ -387,7 +391,7 @@ $$\frac{dE_n(\lambda)}{d \lambda}=\mel{\psi_n(\lambda)}{\frac{dH(\lambda)}{d \la
 \end{lemma}
 
 
-\subsection{Numerical methods for the solution of the Schrodinger equation}
+\subsection{Numerical methods for the solution of the Schrodinger equation} \label{sec:numerical}
 In the general case, the dynamics of a particle are described by a Hamiltonian: 
 \begin{equation}\label{hamiltonian}
 	\hat{H} =- \dfrac{\hbar}{\ {2}{m}} \nabla^2  + V(x),
@@ -397,7 +401,7 @@ Schrodinger equation describes particle dynamics:
 \begin{equation}\label{schr_eq}
 	i \hbar \frac{\partial \Psi(x, t)}{\partial t} = H \Psi(x,t),
 \end{equation}
-where $\Psi(x, t)$ is a wave function, $H$ is a Hamiltonain.\\
+where $\Psi(x, t)$ is a wave function, $H$ is a Hamiltonian.\\
 Bohr provided statistical interpretation of the wave function: $|\Psi(x,t)|^2 $gives the probability of finding the particle at point $x$, at time $t$. Then,$|\Psi(x,t)|^2 dx $ gives probability of finding the particle at point $(x+dx)$, at time $t.$\\
 It follows that 
 $$\int_{-\infty}^\infty |\Psi(x,t)|^2 dx = 1$$
@@ -409,15 +413,15 @@ Time independent Schrodinger equation:
 \end{equation}
 Notice, that general solution is a linear combination of separable solutions: $\Psi(x,t) = \sum_{n=1}^\infty c_n \psi_n (x) e^{-i E_nt/ \hbar},$ where $\psi(x) = c e^{-iEt/ \hbar}.$
 The problem is to find the wave function, describing the dynamic of the particle.\\
-In most cases it is impossible to solve differencial equation analitically. In this case it is used numerical methods, such as Numerov's method.
+In most cases it is impossible to solve differential equation analytically. In this case it is used numerical methods, such as Numerov's method.
 
 \section{Electron in spherically symmetric potentials}
-In this section we will try solve some problems with concrete potencials. But, firstly, we are going to consider some principles for solving  Schrodinger equation in three dymensions.\\
-Using results from paragraph \ref{dif_op_3d} and Laplasian in spherical coordinates \eqref{sph_lap},  we find time-independent Schrodinger equation in the form:
+In this section we will try solve some problems with concrete potentials. But, firstly, we are going to consider some principles for solving  Schrodinger equation in three dimensions.\\
+Using results from paragraph \ref{dif_op_3d} and Laplacian in spherical coordinates \eqref{sph_lap},  we find time-independent Schrodinger equation in the form:
 \begin{equation}\label{t-indep_3d}
 -\frac{\hbar^2}{2m}[\frac{1}{r^2} \frac{\partial}{\partial r}({r^2}\frac{\partial \psi}{\partial r})+\frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}(\sin{\theta}\frac{\partial \psi}{\partial \theta})+\frac{1}{r^2\sin^2{\theta}}(\frac{\partial^2 \psi}{\partial \phi^2}) ] + V\psi = E \psi
 \end{equation}
-We are looking for solutions that are saparable into products:
+We are looking for solutions that are separable into products:
 $$\psi (r, \theta, \psi) = R(r)Y(\theta, \psi),$$
 putting this in \eqref{t-indep_3d} and using results from previous sections, we get:
 \begin{equation}\label{r_eq}
@@ -426,7 +430,7 @@ putting this in \eqref{t-indep_3d} and using results from previous sections, we 
 \begin{equation}\label{Y_eq}
 	\frac{1}{Y}\frac{1}{\sin \theta}\frac{\partial}{\partial \theta}(\sin \theta \frac{\partial Y}{\partial \theta}) + \frac{1}{\sin^2 \theta}\frac{\partial^2 Y}{\partial \phi^2}=-l(l+1).
 \end{equation}
-The equation \eqref{Y_eq} is the angular part of wave function, \eqref{r_eq} is radial part of wave function. Notice, that  the angular part is the same for all spherically symmetric potencials, but for our purposes it is important to investigate the radial part, because spherically symmetric potencials depend only on $r.$\\
+The equation \eqref{Y_eq} is the angular part of wave function, \eqref{r_eq} is radial part of wave function. Notice, that  the angular part is the same for all spherically symmetric potentials, but for our purposes it is important to investigate the radial part, because spherically symmetric potent%\texttt{•}ials depend only on $r.$\\
 Let $u(r) = r R(r)$, so:
 \begin{equation}\label{r_eq}
 	-\frac{\hbar^2}{2m}\frac{\partial^2 u}{\partial r^2}+[V+\frac{\hbar^2}{2m}\frac{l(l+1)}{r^2}]u = Eu
@@ -437,7 +441,7 @@ $$\int_{0}^{\infty} |u|^2  dr=1$$
 \subsection{Spherically symmetric potential well}
 
 \subsubsection{Infinite spherical well}
-For infinite spherical well with radius $a$ potencial is
+For infinite spherical well with radius $a$ potential is
 $$V(r)= \begin{cases}
 0, \text{if } r\leq a\\
 \infty, \text{if } r>a
@@ -471,7 +475,7 @@ E_{nl}=\frac{\hbar^2}{2ma^2}\beta_{nl}^2,
 \end{equation}
 and the wave functions are
 $$\psi_{nlm}(r, \theta,\phi) = A_{nl} j_l(\beta_{nl}r/a) Y_l^m(\theta, \phi),$$
-where $A_{nl}$ is a constant determined by normalization, $Y_l^m(\theta, \phi)$ is spherical garmonics \eqref{sph_garm}.
+where $A_{nl}$ is a constant determined by normalization, $Y_l^m(\theta, \phi)$ is spherical harmonics \eqref{sph_garm}.
 We assume atomic units, so $\hbar = 1, m=1.$ As an example we consider finite spherical well with $\ a = 5 $ a.u. Results are presented in the following table: 
 
 
@@ -487,7 +491,6 @@ $l=2$&  0.664243 &  1.654381 &  3.037127 &  4.814305 \\
 $l=3$ &  0.976643 &  2.170278 &  3.752704 &  5.728436 \\
 $l=4$ &  1.339230 &  2.740140 &  4.524032 &  6.698532 \\
 \bottomrule
-
 \end{tabular}
 \caption{$E_{nl}$ in a.u. of an electron in an infinite spherical well of radius $a=5$ a.u.}
 \end{figure}
@@ -496,7 +499,7 @@ $l=4$ &  1.339230 &  2.740140 &  4.524032 &  6.698532 \\
 
 
 \subsubsection{Finite spherical well}
-For finite spherical well  potencial is defined as:
+For finite spherical well  potential is defined as:
 $$V(r)=\begin{cases}
 -V_0, ~\text{if } r< R\\
 ~~~~0, ~\text{if } r>R
@@ -547,61 +550,135 @@ For finding numerical solutions of our problem (our problem is to calculate the 
 where
 $$f_0(x_0, \xi) = -\frac{\xi}{\sqrt{1-\xi^2}},$$
 $$f_1(x_0, \xi) = \frac{x_0 \xi}{1+\frac{\xi^2}{1-\xi^2}(1+x_0 \sqrt{1-\xi^2})}.$$ 
-
-It can be easily seen that in case $l=0$ \eqref{eq_sol1} takes the form \eqref{eq_sol}.
-In case $l=0$ the equation \eqref{eq_sol1} akes the form:
-$$\tg \bigg(\frac{2mV_0}{\hbar^2}a\sqrt{1-\frac{|E|}{V_0}}\bigg)=-\sqrt{\frac{|E|}{V_0}-1}$$ 
-We assume atomic units, so $\hbar = 1, m=1.$ As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. Results are presented in \ref{fig:fin_well}:
+It can be easily seen that in case $l=0$ \eqref{eq_sol1} takes the form \eqref{eq_sol}. In the further analysis we assume atomic units, so $\hbar = 1, m=1.$ By substituting values of $k_0, k$ and $\varkappa$ to the \eqref{eq_sol} we obtain:
+$$\tan(\sqrt{2} a \sqrt{V_0-E})=-\sqrt{\frac{|E|}{V_0}-1}$$ 
+As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. We solved the equation \eqref{eq_sol} using Newton's method. Resulting energies are given in Figure~\ref{fig:finite_well_sol}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=1.0\linewidth]{tan-sqrt.pdf}
-  \caption{$\tg \bigg(2V_0a\sqrt{1-\frac{|E|}{V_0}}\bigg)=-\sqrt{\frac{|E|}{V_0}-1}$}
+  \caption{$\tan(\sqrt{2} a \sqrt{V_0-E})=-\sqrt{\frac{|E|}{V_0}-1}$}
   \label{fig1:tan-sqrt}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=1.0\linewidth]{finite_well.pdf}
-  \caption{$\tg \bigg(2V_0a\sqrt{1-\frac{|E|}{V_0}}\bigg)+\sqrt{\frac{|E|}{V_0}-1}=0$}
+  \includegraphics[width=1.0\linewidth]{ens_finite.pdf}
+  \caption{Energy levels (a.u.)}
   \label{fig:finite_well_sol}
 \end{subfigure}
-\caption{Graphic Illustration of Solutions}
+\caption{Finite spherical well $V_0 = 10$ a.u., $a=5.0$ a.u.}
 \label{fig:fin_well}
 \end{figure}
 
-Some results for energy are following: 
-$$0.18021667  ~~0.76501696 ~~ 1.34133445 ~~ 1.90238987~~  2.44644499 ~~ 2.97272142,$$
-these values are marked by points on the graphics.
+
+\subsection{Isotropic Harmonic Oscillator}
+For isotropic harmonic oscillator potential is defined as:
+$$V(r) = \frac{1}{2} m \omega^2 r^2 $$
+Isotropy means that the frequencies for independent $x$,$y$, $z$ oscillations are the same. So for the oscillator in 3 dimensions we can use creation and annihilation operators $\hat{a}_x^\dag$, $\hat{a}_y^\dag$ ,$\hat{a}_z^\dag$ and $\hat{a}_x$,  $\hat{a}_y$, $\hat{a}_z$ associated with 1D oscillators in the $x$,$y$,and $z$ directions. The Hamiltonian then takes the form:
+$$H = \hbar \omega (\hat{N}_1 + \hat{N}_2 + \hat{N}_3 + \frac{3}{2}) = \hbar \omega (\hat{N} + \frac{3}{2}),$$
+where $\hat{N} = \hat{N}_1 + \hat{N}_2 + \hat{N}_3 .$\\
+The spectrum for this quantum mechanical system has degeneracies, that are explained by the existence of some hidden symmetry. Thus in some ways this quantum 3D oscillator is a lot more symmetric than the infinite spherical well.\\
+For analytical solution we use the standard separation variables procedure, then the radial equation  $\eqref{r_eq}$ takes the form:
+$$-\frac{\hbar^2}{2m}\frac{\partial^2 u}{\partial r^2}+[\frac{1}{2} m \omega^2 r^2+\frac{\hbar^2}{2m}\frac{l(l+1)}{r^2}]u = Eu$$
+However, a  3D oscillator spectrum finding procedure is complicated, due to this reason we used the numerical methods, described in subsection  $\ref{sec:numerical}$, for solving the problem and compared it with the known formula:
+\begin{equation}
+	E_{nl} = \hbar \omega (2 n_r +l+\frac{3}{2}),~~ n_r = 0,~1,~2,...
+\end{equation}
+Results are the following:
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.45\textwidth}
+\begin{tabular}{lrrrr}
+\toprule
+{$n$} &     {Numerical} &     {Analytical}   \\
+\midrule
+$ 0 $&   0.5196\textcolor{red}{08} &    0.519615 \\
+$ 1 $ &   1.212\textcolor{red}{398} &    1.212436 \\
+$ 2$ &   1.905\textcolor{red}{165} &    1.905256 \\
+$ 3 $ &   2.59\textcolor{red}{7907} &    2.598076 \\
+$ 4$ &   3.290\textcolor{red}{626} &    3.290897 \\
+$ 5 $ &   3.983\textcolor{red}{320} &    3.983717 \\
+\bottomrule
+\end{tabular}
+\caption{$l=0$}
+\end{subfigure}%
+\begin{subfigure}{.45\textwidth}
+\begin{tabular}{lrr}
+\toprule
+{$n$} &  Numerical &  Analytical \\
+\midrule
+0 &   0.8660\textcolor{red}{16} &    0.866025 \\
+1 &   1.5588\textcolor{red}{07} &    1.558846 \\
+2 &   2.251\textcolor{red}{574} &    2.251666 \\
+3 &   2.944\textcolor{red}{318} &    2.944486 \\
+4 &   3.637037 &    3.637307 \\
+5 &   4.3\textcolor{red}{29732} &    4.330127 \\
+\bottomrule
+\end{tabular}
+\caption{$l=1$}
+\end{subfigure}
+\caption{$E_{nl}$ in a.u. for harmonic oscillator }
+\end{figure}
+For more detailed information about numerical experiment see Appendix. For larger $l$ convergence is the same. \\
+Illustration of energy levels given in  Figure \ref{fig:Harm_osc}:
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{harm_osc.pdf}
+  \caption{Spectrum in case $l=0$ (a.u.)}
+  \label{fig1:harm_osc}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{harm_osc1.pdf}
+  \caption{Spectrum in case $l=1$( a.u.)}
+  \label{fig:harm_osc1}
+\end{subfigure}
+\caption{Isotropic Harmonic Oscillator}
+\label{fig:Harm_osc}
+\end{figure}
 
 
+\subsection{The Hydrogen Atom}
+From Coulomb's law, the potential energy (in a.u.) is 
+$$V(r) = -\frac{1}{r},$$
+and the radial equation $\eqref{r_eq}$  says
+$$-\frac{1}{2}\frac{d^2 u}{dr^2}+[-\frac{1}{r}+\frac{1}{2}\frac{l(l+1)}{r^2}]u = Eu.$$
+The analytical solution is known:
+\begin{equation}\label{h2_sol}
+   E_n = -\frac{1}{2 n^2}
+\end{equation}
+We used the numerical methods from section $\ref{sec:numerical},$ and results are the following:
 
+\begin{figure}[h!]
+\centering
+\begin{tabular}{lrr}
+\toprule
+\centering
+$n$ &         Numerical &         Analytical \\
+\midrule
+1 & -0.499911 & -0.500000 \\
+2 & -0.124994 & -0.125000 \\
+3 & -0.055554 & -0.055556 \\
+4 & -0.031250 & -0.031250 \\
+5 & -0.020000 & -0.020000 \\
+\bottomrule
+\end{tabular}
+\caption{$E_{nl}$ in a.u. of The Hydrogen Atom}
+\end{figure}
+Notice, that the hydrogen's spectrum depends only on the energy level $n.$
 
+%\section{Conclusion}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+%\section{Appendix}\label{appendix}
 
 %$$\lambda \sin^2 {\theta}+\frac{\sin{\theta}}{\theta}\frac{\d}{\d \theta}$$
 
-\bibliography{electron}
-\bibliographystyle{plain}
+%\bibliography{electron}
+%\bibliographystyle{plain}
 \end{document}
 	
 	
