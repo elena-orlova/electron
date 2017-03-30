@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.13)  5 MAR 2017 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.13)  27 FEB 2017 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1696,26 +1696,26 @@ LaTeX Warning: Label `r_eq' multiply defined.
 )
 \openout1 = `electron.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 58.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1752,7 +1752,7 @@ LaTeX Font Info:    ... okay on input line 59.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 59.
+LaTeX Info: Redefining \selectfont on input line 58.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1824,24 +1824,24 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 59.
-Package gensymb Info: Math companion symbols declared on input line 59.
-LaTeX Info: Redefining \degree on input line 59.
-LaTeX Info: Redefining \celsius on input line 59.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 58.
+Package gensymb Info: Math companion symbols declared on input line 58.
+LaTeX Info: Redefining \degree on input line 58.
+LaTeX Info: Redefining \celsius on input line 58.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 59.
-LaTeX Info: Redefining \ohm on input line 59.
-Package gensymb Info: Using \textohm for \ohm on input line 59.
-Package gensymb Info: Using \textmu for \micro on input line 59.
+erthousand on input line 58.
+LaTeX Info: Redefining \ohm on input line 58.
+Package gensymb Info: Using \textohm for \ohm on input line 58.
+Package gensymb Info: Using \textmu for \micro on input line 58.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1850,14 +1850,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./pictures/bessel1.pdf Graphic file (type pdf)
 
 <use ./pictures/bessel1.pdf>
-Package pdftex.def Info: ./pictures/bessel1.pdf used on input line 217.
+Package pdftex.def Info: ./pictures/bessel1.pdf used on input line 219.
 (pdftex.def)             Requested size: 241.84843pt x 163.42928pt.
 
 <./pictures/bessel2.pdf, id=30, 445.76137pt x 301.22137pt>
 File: ./pictures/bessel2.pdf Graphic file (type pdf)
 
 <use ./pictures/bessel2.pdf>
-Package pdftex.def Info: ./pictures/bessel2.pdf used on input line 223.
+Package pdftex.def Info: ./pictures/bessel2.pdf used on input line 225.
 (pdftex.def)             Requested size: 241.84843pt x 163.42928pt.
  [4 <./pictures/bessel1.pdf> <./pictures/bessel2.pdf
 
@@ -1868,7 +1868,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [5] [6]
-Overfull \hbox (53.8896pt too wide) in paragraph at lines 407--411
+Overfull \hbox (53.8896pt too wide) in paragraph at lines 409--413
 \T2A/cmr/m/n/12 Notice, that general solution is a linear combination of separa
 ble solutions: $\OT1/cmr/m/n/12 	(\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) = [][]
  \OML/cmm/m/it/12 c[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OM
@@ -1876,51 +1876,41 @@ L/cmm/m/it/12 e[];$
  []
 
 [7] [8] [9]
-Overfull \hbox (1.84857pt too wide) in paragraph at lines 521--523
-\T2A/cmr/m/n/12 We are interested in finding constants $\OML/cmm/m/it/12 A$ \T2
-A/cmr/m/n/12 and $\OML/cmm/m/it/12 B$ \T2A/cmr/m/n/12 from the continuity and n
-ormalization conditions.
- []
-
-
-Overfull \hbox (0.64867pt too wide) in paragraph at lines 529--531
+Overfull \hbox (0.64867pt too wide) in paragraph at lines 531--533
 \T2A/cmr/m/n/12 Now divide [] by [], then the constants cancel out. This trick 
 is called logarithmic derivative: 
  []
 
-[10] <tan-sqrt.pdf, id=101, 433.62pt x 289.08pt>
-File: tan-sqrt.pdf Graphic file (type pdf)
- <use tan-sqrt.pdf>
-Package pdftex.def Info: tan-sqrt.pdf used on input line 556.
+[10] <./pictures/tan-sqrt.pdf, id=101, 578.16pt x 433.62pt>
+File: ./pictures/tan-sqrt.pdf Graphic file (type pdf)
+
+<use ./pictures/tan-sqrt.pdf>
+Package pdftex.def Info: ./pictures/tan-sqrt.pdf used on input line 559.
+(pdftex.def)             Requested size: 241.84843pt x 181.38472pt.
+
+<./pictures/finite_well.pdf, id=102, 433.62pt x 289.08pt>
+File: ./pictures/finite_well.pdf Graphic file (type pdf)
+
+<use ./pictures/finite_well.pdf>
+Package pdftex.def Info: ./pictures/finite_well.pdf used on input line 565.
 (pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
+ (./electron.bbl) [11 <./pictures/tan-sqrt.pdf> <./pictures/finite_well.pdf
 
-<ens_finite.pdf, id=102, 433.62pt x 289.08pt>
-File: ens_finite.pdf Graphic file (type pdf)
- <use ens_finite.pdf>
-Package pdftex.def Info: ens_finite.pdf used on input line 562.
-(pdftex.def)             Requested size: 241.84843pt x 161.23528pt.
-
-(./electron.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [11 <./tan-sqrt.pdf> <./ens_finite.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./ens_finite.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pictures/finite_well.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 >] (./electron.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24705 strings out of 493014
- 476653 string characters out of 6133351
- 486771 words of memory out of 5000000
- 27846 multiletter control sequences out of 15000+600000
+ 24707 strings out of 493014
+ 476775 string characters out of 6133351
+ 486773 words of memory out of 5000000
+ 27848 multiletter control sequences out of 15000+600000
  23444 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,58p,10384b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,58p,10384b,802s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 }</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1945,10 +1935,10 @@ texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on electron.pdf (11 pages, 429162 bytes).
+Output written on electron.pdf (11 pages, 429530 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 232 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

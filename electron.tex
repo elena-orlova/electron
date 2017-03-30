@@ -24,7 +24,6 @@
 \usepackage{amssymb}
 \usepackage{enumerate}
 \usepackage{units}
-
 \long\def\comment{}
 
 \newtheorem{theorem}{Theorem}
@@ -62,12 +61,15 @@
 		\large
 		\textbf{National Research University}			
 		\\
-		\textbf{Higher School of Economics}									\\[10 cm]
-		
+		\textbf{Higher School of Economics}									\\[3 cm]
+		\textbf{Moscow Institute of Electronics and Mathematics}			\\[2 cm]
 									
 	\end{center}
 	
-	
+	\begin{center}
+		\large
+		\textbf{Department of Applied Mathematics}		\\[3 cm]
+	\end{center}
 	
 	
 	
@@ -494,21 +496,21 @@ $l=4$ &  1.339230 &  2.740140 &  4.524032 &  6.698532 \\
 
 
 \subsubsection{Finite spherical well}
-For finite spherical well  potential is defined as:
+For finite spherical well  potencial is defined as:
 $$V(r)=\begin{cases}
 -V_0, ~\text{if } r< R\\
 ~~~~0, ~\text{if } r>R
 \end{cases}$$
 Let
 $$\frac{2m|E|}{\hbar^2} = \varkappa^2, ~~~~\frac{2m V_0}{\hbar^2}=k_0^2, ~~~~\frac{2m(V_0-|E|)}{\hbar^2} =k^2,$$
-then the radial equation inside of the well and outside are correspondingly:
+then the radial equation inside of the well and outside are correspondently:
 \begin{equation}\label{rad1}
-	\frac{d^2 u}{dr^2}+[k^2-\frac{l(l+1)}{r^2}]u=0
+	\frac{d^2 u}{du^2}+[k^2-\frac{l(l+1)}{r^2}]u=0
 \end{equation}
 \begin{equation}\label{rad2}
-	\frac{d^2 u}{dr^2}+[-\varkappa^2-\frac{l(l+1)}{r^2}]u=0
+	\frac{d^2 u}{du^2}+[-\varkappa^2-\frac{l(l+1)}{r^2}]u=0
 \end{equation}
-The solution of the equation \eqref{rad1} is a spherical Bessel function (with the boundary confition $u(0) =0$):
+The solution of the quation \eqref{rad1} is a spherical Bessel function (with the boundary confition $u(0) =0$):
 $$r u(r) =A j_l(kr), ~r< R.$$
 To find the solutions of \eqref{rad2} we need to define spherical Hankel functions:
 $$h_l(x) = j_l(x)+in_l(x),$$
@@ -517,13 +519,13 @@ where $j_l(x)$ and $n_l(x)$ are spherical Bessel functions \eqref{bess_func1}, \
 As $r \to \infty$
 $$h_l(x) \to \frac{e^{[ix-\pi (l+1)/2]}}{x}$$
 $$h_l^*(x) \to \frac{e^{-[ix-\pi (l+1)/2]}}{x}$$
-The solution of the equation \eqref{rad2} is a spherical Hankel function of an imaginary argument:
+The solution of the quation \eqref{rad2} is a spherical Hankel function of an imaginary argument:
 $$r u(r) = B h_l^{(1)}(i \varkappa r), ~r>R.$$
-We are interested in finding constants $A$ and $B$ from the continuity and normalization conditions. Firstly we match the wavefunction:
+We are interested in finding constants $A$ and $B$ from continuity and normalization condition. First match the wavefunction:
 \begin{equation}\label{cond_1}
 	A j_l(kR)=B h_l(i \varkappa R).
 \end{equation}
-Secondly we match the first derivative:
+Second match the first derivative:
 \begin{equation}\label{cond_2}
 	A k \bigg[\frac{d j_l(\rho)}{d\rho}\bigg]_{\rho = kR} = A i \varkappa \bigg[\frac{d j_l(\rho)}{d\rho}\bigg]_{\rho = i \varkappa R}.
 \end{equation}
@@ -537,8 +539,8 @@ $$k \bigg(\ctg(kR)-\frac{1}{kR}\bigg) = i \varkappa \bigg( i - \frac{1}{i \varka
 \begin{equation}\label{eq_sol}
 	k \ctg(kR) = - \varkappa.
 \end{equation}
-This is transcendental equation, but we can solve it numerically for  $k$ by noting that $k_0^2-\varkappa^2=k^2.$ It is also possible that there can be no solution. We are also interested in more general cases $l > 0$.\\
-It is convenient to use the following form of \eqref{eq_sol} with the notations $kR = x, ~k_0 R=x_0, ~\frac{k}{k_0} = \xi, ~\varkappa R = \sqrt{1-\xi^2}$:
+This is transcendental equation, but we can solve it numerically for  $k$,  for which $k_0^2-\varkappa^2=k^2.$ Also, it is possible that there can be no solution. For instance, we can solve this equation graphically, but remember, it is only for case $l=0.$ We are interested in more general cases.\\
+For finding numerical solutions of our problem (our problem is to calculate the possible values of the electron energy) not only for $l=0$ it is convenient to use the following form of \eqref{eq_sol} with the notations $kR = x, ~k_0 R=x_0, ~\frac{k}{k_0} = \xi, ~\varkappa R = \sqrt{1=\xi^2}$:
 \begin{equation}\label{eq_sol1}
 	\tg(x_0 \xi) = f_l(x_0 \xi),
 \end{equation}
@@ -546,27 +548,53 @@ where
 $$f_0(x_0, \xi) = -\frac{\xi}{\sqrt{1-\xi^2}},$$
 $$f_1(x_0, \xi) = \frac{x_0 \xi}{1+\frac{\xi^2}{1-\xi^2}(1+x_0 \sqrt{1-\xi^2})}.$$ 
 
-It can be easily seen that in case $l=0$ \eqref{eq_sol1} takes the form \eqref{eq_sol}. In the further analysis we assume atomic units, so $\hbar = 1, m=1.$ By substituting values of $k_0, k$ and $\varkappa$ to the \eqref{eq_sol} we obtain:
-$$\tan(\sqrt{2} a \sqrt{V_0-E})=-\sqrt{\frac{|E|}{V_0}-1}$$ 
-As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. We solved the equation \eqref{eq_sol} using Newton's method. Results are presented in Figure~\ref{fig:fin_well}.
+It can be easily seen that in case $l=0$ \eqref{eq_sol1} takes the form \eqref{eq_sol}.
+In case $l=0$ the equation \eqref{eq_sol1} akes the form:
+$$\tg \bigg(\frac{2mV_0}{\hbar^2}a\sqrt{1-\frac{|E|}{V_0}}\bigg)=-\sqrt{\frac{|E|}{V_0}-1}$$ 
+We assume atomic units, so $\hbar = 1, m=1.$ As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. Results are presented in \ref{fig:fin_well}:
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=1.0\linewidth]{tan-sqrt.pdf}
-  \caption{$\tan(\sqrt{2} a \sqrt{V_0-E})=-\sqrt{\frac{|E|}{V_0}-1}$}
+  \caption{$\tg \bigg(2V_0a\sqrt{1-\frac{|E|}{V_0}}\bigg)=-\sqrt{\frac{|E|}{V_0}-1}$}
   \label{fig1:tan-sqrt}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=1.0\linewidth]{ens_finite.pdf}
-  \caption{Energy levels}
+  \includegraphics[width=1.0\linewidth]{finite_well.pdf}
+  \caption{$\tg \bigg(2V_0a\sqrt{1-\frac{|E|}{V_0}}\bigg)+\sqrt{\frac{|E|}{V_0}-1}=0$}
   \label{fig:finite_well_sol}
 \end{subfigure}
-\caption{Finite spherical well $V_0 = 10$ a.u., $a=5.0$ a.u.}
+\caption{Graphic Illustration of Solutions}
 \label{fig:fin_well}
 \end{figure}
-Resulting energies are given in Figure~\ref{fig:finite_well_sol}.
+
+Some results for energy are following: 
+$$0.18021667  ~~0.76501696 ~~ 1.34133445 ~~ 1.90238987~~  2.44644499 ~~ 2.97272142,$$
+these values are marked by points on the graphics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
