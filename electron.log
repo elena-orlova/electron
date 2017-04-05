@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.13)  30 MAR 2017 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.9)  5 APR 2017 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1707,26 +1707,26 @@ LaTeX Warning: Label `r_eq' multiply defined.
 )
 \openout1 = `electron.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    ... okay on input line 65.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1779,7 +1779,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 62.
+LaTeX Info: Redefining \selectfont on input line 65.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1836,117 +1836,153 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 62.
-Package gensymb Info: Math companion symbols declared on input line 62.
-LaTeX Info: Redefining \degree on input line 62.
-LaTeX Info: Redefining \celsius on input line 62.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 65.
+Package gensymb Info: Math companion symbols declared on input line 65.
+LaTeX Info: Redefining \degree on input line 65.
+LaTeX Info: Redefining \celsius on input line 65.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 62.
-LaTeX Info: Redefining \ohm on input line 62.
-Package gensymb Info: Using \textohm for \ohm on input line 62.
-Package gensymb Info: Using \textmu for \micro on input line 62.
+erthousand on input line 65.
+LaTeX Info: Redefining \ohm on input line 65.
+Package gensymb Info: Using \textohm for \ohm on input line 65.
+Package gensymb Info: Using \textmu for \micro on input line 65.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./elec
+tron.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
-Overfull \hbox (3.25772pt too wide) in paragraph at lines 194--195
-[]\T2A/cmr/m/n/12 The general solution to Laplace's equation is linear combinat
-ion of the spherical harmonic functions
- []
+))
+\tf@toc=\write4
+\openout4 = `electron.toc'.
 
-[3] <./pictures/bessel1.pdf, id=29, 445.76137pt x 301.22137pt>
+ [2] [3]
+[4] <./pictures/bessel1.pdf, id=32, 445.76137pt x 301.22137pt>
 File: ./pictures/bessel1.pdf Graphic file (type pdf)
 
 <use ./pictures/bessel1.pdf>
-Package pdftex.def Info: ./pictures/bessel1.pdf used on input line 223.
+Package pdftex.def Info: ./pictures/bessel1.pdf used on input line 218.
 (pdftex.def)             Requested size: 256.07481pt x 173.04466pt.
 
-<./pictures/bessel2.pdf, id=30, 445.76137pt x 301.22137pt>
+<./pictures/bessel2.pdf, id=33, 445.76137pt x 301.22137pt>
 File: ./pictures/bessel2.pdf Graphic file (type pdf)
 
 <use ./pictures/bessel2.pdf>
-Package pdftex.def Info: ./pictures/bessel2.pdf used on input line 229.
+Package pdftex.def Info: ./pictures/bessel2.pdf used on input line 224.
 (pdftex.def)             Requested size: 256.07481pt x 173.04466pt.
- [4 <./pictures/bessel1.pdf> <./pictures/bessel2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pictures/bessel2.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
->]
+ [5 <./pictures/bessel1.pdf> <./pictures/bessel2.pdf>]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [5]
-Overfull \hbox (41.8814pt too wide) in paragraph at lines 331--337
+
+Overfull \hbox (5.61093pt too wide) in paragraph at lines 303--313
+\T2A/cmr/m/n/12 fundamental commutation relations as []. But these time the eig
+envectiors are not spherical harmonics
+ []
+
+
+Overfull \hbox (41.8814pt too wide) in paragraph at lines 316--322
 \T2A/cmr/m/n/12 function becomes: $\OT1/cmr/m/n/12 	 = 	(\OML/cmm/m/it/12 x; y;
  z; ^^[; t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;$ \T2A/cmr/m/n/12 and normalizatio
 n condition becomes $[]\OML/cmm/m/it/12 :$ 
  []
 
-
-Overfull \hbox (3.48137pt too wide) in paragraph at lines 384--387
+[6]
+Overfull \hbox (3.48137pt too wide) in paragraph at lines 369--372
 \T2A/cmr/m/n/12 The problem is to find the eigenfunctions of the Hamiltonian (s
 tationary states), and the corresponding
  []
 
-[6]
-Overfull \hbox (25.43684pt too wide) in paragraph at lines 413--417
-\T2A/cmr/m/n/12 Notice, that general solution is a linear combination of separa
-ble solutions: $\OT1/cmr/m/n/12 	(\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) = [][]
- \OML/cmm/m/it/12 c[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OM
-L/cmm/m/it/12 e[];$
+[7]
+Overfull \hbox (44.36281pt too wide) in paragraph at lines 398--402
+\T2A/cmr/m/n/12 Notice, that general solution is a linear combination of the se
+parable solutions: $\OT1/cmr/m/n/12 	(\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 ) = 
+[][] \OML/cmm/m/it/12 c[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 e[];$
  []
 
-[7] [8] [9] [10] <./pictures/tan-sqrt.pdf, id=101, 578.16pt x 433.62pt>
-File: ./pictures/tan-sqrt.pdf Graphic file (type pdf)
+[8] [9]
 
-<use ./pictures/tan-sqrt.pdf>
-Package pdftex.def Info: ./pictures/tan-sqrt.pdf used on input line 560.
-(pdftex.def)             Requested size: 256.07481pt x 192.05052pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./pictures/ens_finite.pdf, id=102, 433.62pt x 289.08pt>
-File: ./pictures/ens_finite.pdf Graphic file (type pdf)
-
-<use ./pictures/ens_finite.pdf>
-Package pdftex.def Info: ./pictures/ens_finite.pdf used on input line 566.
+[10] [11] <tan-sqrt.pdf, id=104, 433.62pt x 289.08pt>
+File: tan-sqrt.pdf Graphic file (type pdf)
+ <use tan-sqrt.pdf>
+Package pdftex.def Info: tan-sqrt.pdf used on input line 599.
 (pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
- [11 <./pictures/tan-sqrt.pdf> <./pictures/ens_finite.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pictures/ens_finite.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->] <harm_osc.pdf, id=185, 433.62pt x 289.08pt>
+<ens_finite.pdf, id=105, 433.62pt x 289.08pt>
+File: ens_finite.pdf Graphic file (type pdf)
+ <use ens_finite.pdf>
+Package pdftex.def Info: ens_finite.pdf used on input line 605.
+(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] <harm_osc.pdf, id=109, 433.62pt x 289.08pt>
 File: harm_osc.pdf Graphic file (type pdf)
  <use harm_osc.pdf>
-Package pdftex.def Info: harm_osc.pdf used on input line 630.
+Package pdftex.def Info: harm_osc.pdf used on input line 671.
 (pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
 
-<harm_osc1.pdf, id=186, 433.62pt x 289.08pt>
+<harm_osc1.pdf, id=110, 433.62pt x 289.08pt>
 File: harm_osc1.pdf Graphic file (type pdf)
  <use harm_osc1.pdf>
-Package pdftex.def Info: harm_osc1.pdf used on input line 636.
+Package pdftex.def Info: harm_osc1.pdf used on input line 677.
 (pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
- [12 <./harm_osc.pdf> <./harm_osc1.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./harm_osc1.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
->] [13] (./electron.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./tan-sqrt.pdf> <./ens_finite.pdf>]
+<h2_atom.pdf, id=191, 144.54pt x 361.35pt>
+File: h2_atom.pdf Graphic file (type pdf)
+ <use h2_atom.pdf>
+Package pdftex.def Info: h2_atom.pdf used on input line 720.
+(pdftex.def)             Requested size: 102.42836pt x 256.06956pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./harm_osc.pdf> <./harm_osc1.pdf>]
+<WS_poten.pdf, id=264, 433.62pt x 289.08pt>
+File: WS_poten.pdf Graphic file (type pdf)
+ <use WS_poten.pdf>
+Package pdftex.def Info: WS_poten.pdf used on input line 737.
+(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
+
+<WS_wave.pdf, id=265, 433.62pt x 289.08pt>
+File: WS_wave.pdf Graphic file (type pdf)
+ <use WS_wave.pdf>
+Package pdftex.def Info: WS_wave.pdf used on input line 743.
+(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
+
+Overfull \hbox (12.54103pt too wide) in paragraph at lines 731--750
+\T2A/cmr/m/n/12 When using the Schrodinger equation to find the spectrum of nuc
+leons subjected to the Woodsâ€“Saxon
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./h2_atom.pdf>] [16 <./WS_poten.pdf> <./WS_wave.pdf>] [17] (./electron.aux
+)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24767 strings out of 493014
- 477640 string characters out of 6133351
- 481470 words of memory out of 5000000
- 27905 multiletter control sequences out of 15000+600000
+ 24796 strings out of 493014
+ 477969 string characters out of 6133352
+ 486557 words of memory out of 5000000
+ 27928 multiletter control sequences out of 15000+600000
  23444 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,58p,10384b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1974,10 +2010,10 @@ texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on electron.pdf (13 pages, 462900 bytes).
+Output written on electron.pdf (17 pages, 502938 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
+ 435 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
