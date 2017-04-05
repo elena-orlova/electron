@@ -58,6 +58,9 @@
 \addto\captionsrussian{\renewcommand{\refname}{References}}
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\refname}{References}
+\renewcommand*\contentsname{Contents}
+
+\pdfsuppresswarningpagegroup=1
 
 \begin{document}
 	%-------------------------------------------------TITLE----------------------------------------------------------
@@ -85,9 +88,9 @@
 	
 	\begin{flushright}
 		\large
-		\textbf{Orlova Elena Gennagyevna}				\\
+		\textbf{Orlova Elena}				\\
 		\textbf{Scientific Supervisor:}			\\
-		\textbf{Ikhsanov Renat Shamil’evich}		\\
+		\textbf{Ikhsanov Renat}		\\
 	\end{flushright}
 	
 	\vfill
@@ -100,7 +103,11 @@
 	
 	
     %-------------------------------------------------------------1-----------------------------------------------------------
-		
+	
+
+\tableofcontents
+\pagebreak
+	
 \section{Introduction}
 
 An important problem in quantum mechanics is a benaviour of a particle in a spherically symmetric potential, which depends only on the distance between the particle and a defined center point. An electron in the potential derived from Coulomb's law is well-known example. The problem can be used to describe a hydrogen-like atom. 
@@ -152,8 +159,6 @@ Cartesian coordinates to Spherical coordinates:
 	{z} = {r}\cos{\theta}
 \end{cases}
 \end{equation}
-
-
 Laplacian is a differential operator given by the divergence of the gradient of a function on Euclidean space. Laplace operator in Cartesian coordinates:
  	$$\nabla^2= \frac{\partial^2}{\partial x^2}  + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$$
 So, using \eqref{sph_coord} we can find Laplasian in spherical coordinates:
@@ -174,23 +179,15 @@ $$\frac{1}{R}\frac{\partial}{\partial r}(r^2 \frac {dR}{dr}) = \lambda$$
 \begin{equation}\label{eq2}
 	\frac{1}{Y}\frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta}(\sin{\theta}\frac{\partial Y}{\partial \theta})+\frac{1}{Y}\frac{1}{\sin^2{\theta}}\frac{\partial^2 Y}{\partial \phi^2} = -\lambda
 \end{equation}
-
-
 The solution of \eqref{eq2} is represented in following form, called spherical garmonics of degree $l$ and order $m$:
 \begin{equation}\label{sph_garm}
 	Y_l^m(\theta, \phi)=\varepsilon \sqrt{\frac{(2l+1)}{4\pi}\frac{(l-|m|)!}{(l+|m|)!}}e^{im\phi}P_l^m(\cos{\theta}),
 \end{equation}
- 
-
-where $\varepsilon = (-1)^m$ for $m\geq0$ and $\varepsilon=1$ for $m \leq 0$, $-l \leq m \leq l$ and $P_l^m $ is associated with Legendre Function, defined by:
+ where $\varepsilon = (-1)^m$ for $m\geq0$ and $\varepsilon=1$ for $m \leq 0$, $-l \leq m \leq l$ and $P_l^m $ is associated with Legendre Function, defined by:
 	$$P_l^m(x)=(1-x^2)^{\frac{|m|}{2}}(\frac{d}{dx})^{|m|}P_l(x),$$
 where $P_l(x) $ is Rodrigues formula:
 	$$P_l(x) = \frac{1}{2^l l!}(\frac{d}{dx})^l (x^2-1)^l.$$
-
-
-Notice, that $m$ and $l$ are integers. For any given $l$ there are $(2l+1)$ possible values for $m$: $l=0, 1...$, $m = -l, -l+1,..., -1, 0, 1, .., l-1, l.$
-
-
+Notice, that $m$ and $l$ are integers. For any given $l$ there are $(2l+1)$ possible values for $m$: $l=0, 1...$, $m = -l, -l+1,..., -1, 0, 1, .., l-1, l.$\\
 The general solution to Laplace's equation is linear combination of the spherical harmonic functions multiplied by the appropriate scale factor $r^l$:
 	$$f(r, \theta. \phi) = \sum_{l=0} ^{\infty}\sum_{m=-l} ^{l}f_l^mr^l Y_l^m(\theta, \phi).$$
 where the $f_l^m$ are constants.
@@ -201,12 +198,10 @@ Bessel functions are canonical solutions $y(x)$ of following differential equati
 \begin{equation}\label{bess_eq}
 x^2\frac{d^2 y}{dx^2}+x\frac{dy}{dx}+(x^2-\alpha^2)y = 0,
 \end{equation}
-where $\alpha$ is an arbitrary complex number, called the order of the Bessel function.
-
+where $\alpha$ is an arbitrary complex number, called the order of the Bessel function.\\
 The most important cases are for $\alpha$ an integer or half-integer. Spherical Bessel functions with half-integer $\alpha$ are obtained when the Helmholtz equation is solved in spherical coordinates:
 $$\nabla^2 A+k^2 A=0,$$
-where $k$  is a wave number and $A$ is an amplitude.
-
+where $k$  is a wave number and $A$ is an amplitude.\\
 When solving the Helmholtz equation in spherical coordinates by separation of variables, the radial equation has the form:
 $$x^2\frac{d^2 y}{dx^2}+2x\frac{dy}{dx}+[x^2-n(n+1)]y = 0$$
 The two linearly independent solutions to this equation are called the spherical Bessel functions $j_n$ and $y_n$:
@@ -244,21 +239,15 @@ $$\boldsymbol{L} = \begin{vmatrix} \boldsymbol{i} & \boldsymbol{j} & \boldsymbol
 x & y & z \\
 p_x & p_y & p_z
 \end{vmatrix}$$
-
-
 This definition can be carried over to quantum mechanics, by reinterpreting $r$ as the quantum position operator   $\hat x=x$  and $p$ as the quantum momentum operator $\hat p=\frac{\hbar}{i}\nabla$:
-
 
 $$\boldsymbol{L} = \frac{\hbar}{i}\begin{vmatrix} \boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k} \\ 
 x & y & z \\
 \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}
 \end{vmatrix}$$
-
 Writing this in coordinates, we obtain:
 
 $$L_x = \frac{\hbar}{i}(y \frac{\partial}{\partial z}-z \frac{\partial}{\partial y}), ~L_y = \frac{\hbar}{i}(z \frac{\partial}{\partial x}-x \frac{\partial}{\partial z}), ~L_z = \frac{\hbar}{i}(x \frac{\partial}{\partial y}-y \frac{\partial}{\partial x})$$
-
-
 In the next section we will consider the eigenvalues and eigenfunctions of these operators.
 
 \subsubsection{Eigenvalues and eigenfunctions}
@@ -279,7 +268,6 @@ In the next section we will consider the eigenvalues and eigenfunctions of these
 %It follows also that 
 %$$[L_y, L_z] = i \hbar L_x $$
 %$$[L_z, L_x] = i \hbar L_y$$
-
 We have the angular momentum operator $\hat L = (\hat L_x,\hat L_y, \hat L_z),$ and these components sutisfy the following commutation relations:
 \begin{equation}\label{comm_L}
 	[\hat L_i, \hat L_j] =i \hbar \epsilon_{ijk}  \hat L_k, ~~~i, j, k =1,2,3
@@ -312,11 +300,8 @@ where $f_l^m = Y_l^m$ - spherical harmonics, defined in \eqref{sph_garm}.
 
 
 \subsection{Spin}
-In classical mechanics, an object's rotation around a fixed axis  is described by two kinds of angular momentum: orbital ($L = r \times p$), associated with the motion of the center of mass, and spin($S = I \omega$), associated with motion about the center of mass. An analogous things take place in quantum mechanics: in addition to orbital angular momentum, associated with the motion of electron around the nucleus (in case of hydrogen ), and which  described by spherical harmonics, but electron also carries another form of angular momentum, which has nothing to do with motion in space, but which is somewhat analogous to classical spin. Notice, that electron is a structureless point particle, and its spin angular momentum cannot be decomposed into orbital one of constituent parts. So, elementary particles have intrinsic angular momentum $S$ and "extrinsic" angular momentum $L.$
-
-The existence of spin angular momentum was proven in experiments, for instance the Stern-Gerlach experiment.
-
-
+In classical mechanics, an object's rotation around a fixed axis  is described by two kinds of angular momentum: orbital ($L = r \times p$), associated with the motion of the center of mass, and spin($S = I \omega$), associated with motion about the center of mass. An analogous things take place in quantum mechanics: in addition to orbital angular momentum, associated with the motion of electron around the nucleus (in case of hydrogen ), and which  described by spherical harmonics, but electron also carries another form of angular momentum, which has nothing to do with motion in space, but which is somewhat analogous to classical spin. Notice, that electron is a structureless point particle, and its spin angular momentum cannot be decomposed into orbital one of constituent parts. So, elementary particles have intrinsic angular momentum $S$ and "extrinsic" angular momentum $L.$\\
+The existence of spin angular momentum was proven in experiments, for instance the Stern-Gerlach experiment.\\
 The algebraic  theory of spin is the same as theory for orbital angular momentum. So, there are fundamental commutation relations as \eqref{comm_L}.
 %\begin{equation}\label{comm_S}
 %[S_x, S_y] = i \hbar S_z, ~~~~[S_y, S_z] = i \hbar S_x, ~~~~ [S_z, S_x] = i \hbar S_y.
@@ -411,11 +396,65 @@ Time independent Schrodinger equation:
 \begin{equation}\label{t-indep}
 	H \psi = E \psi
 \end{equation}
-Notice, that general solution is a linear combination of separable solutions: $\Psi(x,t) = \sum_{n=1}^\infty c_n \psi_n (x) e^{-i E_nt/ \hbar},$ where $\psi(x) = c e^{-iEt/ \hbar}.$
-The problem is to find the wave function, describing the dynamic of the particle.\\
-In most cases it is impossible to solve differential equation analytically. In this case it is used numerical methods, such as Numerov's method.
+Notice, that general solution is a linear combination of the separable solutions: $\Psi(x,t) = \sum_{n=1}^\infty c_n \psi_n (x) e^{-i E_nt/ \hbar},$ where $\psi(x) = c e^{-iEt/ \hbar}.$
+The problem is to find a wave function, describing the dynamic of the particle. As it turns out, it is often impossible to solve a differential equation analytically. In this case it is used numerical methods: describe the main idea.\\
+In the spherical summetry case we obtain the following equation, which is called radial (see section \ref{e_sph_poten}): 
+$$-\frac{\hbar^2}{2m}\frac{d^2 u}{d r^2}+[V+\frac{\hbar^2}{2m}\frac{l(l+1)}{r^2}]u = Eu,$$
+where $u(r) = r R(r).$ 
+If  $l=0$ the equation says:
+$$-\frac{\hbar^2}{2m}\frac{d^2 u}{d r^2}+Vu = Eu,$$
+$$-\frac{\hbar^2}{2m}u''+Vu = Eu.$$
+If we let $\hbar = 1, m=1:$ (atomic units)
+$$-\frac{u''}{2}+Vu = Eu,$$
+$$u'' +(-2V)u = (-2E)u,$$
+$$(\frac{d^2}{d r^2}-2V)u = (-2E)u.$$
+The last equation explicitly hints at the search for eigenvalues of $(\frac{d^2}{d r^2}-2V)$. To do this, we need to approximate the continuous expression discrete. Since the wave function is typically exponentially damped, we can assume that $ u (r) = 0 $ for $ r \geq L $ for some sufficiently large $ L $. \\
+Thus, we obtain an eigenvalue problem with the boundary conditions $u(0) = 0$(since $ u (r) = r R (r) $) and $ u (L) = 0 $. We define the step $ h = L N ^{-l}$, where $ N $ is a natural (divide the segment $ [0, L] $ into N parts, h is the step), $ r_n = nh $ is the grid nodes.\\
+The second derivative is given by the following relation (from the Taylor series): $$\displaystyle{{u_n''} = \frac{u_{n+1}-2u_n +u_{n-1}}{h^2}}.$$ 
+Then $(u''(r))_n \to u_n''(r):$
+$$\displaystyle{u_n'' = -\frac{1}{h^2} \begin{bmatrix}
+-2 & 1 &0&0&0& \cdots & 0 \\
+1 & -2 & 1& 0&0&\cdots & 0 \\  
+0&1 & -2 & 1& 0&\cdots & 0 \\  
+\vdots & \vdots &\vdots & \vdots & \ddots & -2& 1  \\
+0 & 0&0 &0& \cdots &1 & -2
+\end{bmatrix}
+\begin{bmatrix}
+u_1
+\\
+u_2
+\\
+u_3
+\\
+\vdots
+\\
+u_n
+\end{bmatrix}}$$
+We note that the resulting matrix has a tridiagonal form.\\
+Now we need approximate $(-2Vu)(r_n)$:
+$$(-2Vu)(r_n) = \begin{bmatrix}
+-2V(r_1) & 0 &0&0&0& \cdots & 0 \\
+0 & -2V(r_2) & 0& 0&0&\cdots & 0 \\  
+0&0 & -2V(r_3) & 0& 0&\cdots & 0 \\  
+\vdots & \vdots &\vdots & \vdots & \ddots & \vdots& \vdots  \\
+0 & 0&0 &0& \cdots &0 & -2V(r_{n-1})
+\end{bmatrix}
+\begin{bmatrix}
+u_1
+\\
+u_2
+\\
+u_3
+\\
+\vdots
+\\
+u_n
+\end{bmatrix}$$
+It is easy to check that $\displaystyle{||u_n''-u''|| \sim O(h^2)}.$\\
+Thus our problem is to find explicitly the eigenvalues for the sum of the matrices presented.
 
-\section{Electron in spherically symmetric potentials}
+
+\section{Electron in spherically symmetric potentials}\label{e_sph_poten}
 In this section we will try solve some problems with concrete potentials. But, firstly, we are going to consider some principles for solving  Schrodinger equation in three dimensions.\\
 Using results from paragraph \ref{dif_op_3d} and Laplacian in spherical coordinates \eqref{sph_lap},  we find time-independent Schrodinger equation in the form:
 \begin{equation}\label{t-indep_3d}
@@ -552,7 +591,7 @@ $$f_0(x_0, \xi) = -\frac{\xi}{\sqrt{1-\xi^2}},$$
 $$f_1(x_0, \xi) = \frac{x_0 \xi}{1+\frac{\xi^2}{1-\xi^2}(1+x_0 \sqrt{1-\xi^2})}.$$ 
 It can be easily seen that in case $l=0$ \eqref{eq_sol1} takes the form \eqref{eq_sol}. In the further analysis we assume atomic units, so $\hbar = 1, m=1.$ By substituting values of $k_0, k$ and $\varkappa$ to the \eqref{eq_sol} we obtain:
 $$\tan(\sqrt{2} a \sqrt{V_0-E})=-\sqrt{\frac{|E|}{V_0}-1}$$ 
-As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. We solved the equation \eqref{eq_sol} using Newton's method. Resulting energies are given in Figure~\ref{fig:finite_well_sol}.
+As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$ a.u. We solved the equation \eqref{eq_sol} using Newton's method. The resulting energies are given in the Figure~\ref{fig:finite_well_sol}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -570,6 +609,8 @@ As an example we consider finite spherical well with $\ a = 5 $ a.u.,$ V_0 = 10$
 \caption{Finite spherical well $V_0 = 10$ a.u., $a=5.0$ a.u.}
 \label{fig:fin_well}
 \end{figure}
+
+
 
 
 \subsection{Isotropic Harmonic Oscillator}
@@ -643,16 +684,18 @@ Illustration of energy levels given in  Figure \ref{fig:Harm_osc}:
 
 
 \subsection{The Hydrogen Atom}
-From Coulomb's law, the potential energy (in a.u.) is 
-$$V(r) = -\frac{1}{r},$$
+From the Coulomb's law, the potential energy (in a.u.) is 
+\begin{equation}\label{h2_potrntial}
+	V(r) = -\frac{1}{r},
+\end{equation}
 and the radial equation $\eqref{r_eq}$  says
 $$-\frac{1}{2}\frac{d^2 u}{dr^2}+[-\frac{1}{r}+\frac{1}{2}\frac{l(l+1)}{r^2}]u = Eu.$$
 The analytical solution is known:
 \begin{equation}\label{h2_sol}
    E_n = -\frac{1}{2 n^2}
 \end{equation}
+Notice, that the hydrogen's spectrum depends only on the energy level $n.$ \textcolor{green}{The reason that the energy level depends only on n is that for just one electron the only force acting on it is the coulomb force between the nucleus and the electron. As such this is the only force that dictates the potential energy term in the Schrodinger equation. In this case the strength of the coulomb force between the hydrogen nucleus and the electron only depends on the distance between the two and the charge involved (2q in this case). The force is spherically symmetric (aka rotationally invariant) so it doesn't matter where around the hydrogen nucleus an electron is. As long as the distance between the two is constant the strength of the force is constant. Hence, the energy is constant}.\\
 We used the numerical methods from section $\ref{sec:numerical},$ and results are the following:
-
 \begin{figure}[h!]
 \centering
 \begin{tabular}{lrr}
@@ -660,16 +703,113 @@ We used the numerical methods from section $\ref{sec:numerical},$ and results ar
 \centering
 $n$ &         Numerical &         Analytical \\
 \midrule
-1 & -0.499911 & -0.500000 \\
-2 & -0.124994 & -0.125000 \\
-3 & -0.055554 & -0.055556 \\
+1 & -0.\textcolor{red}{499911} & -0.500000 \\
+2 & -0.12\textcolor{red}{4994} & -0.125000 \\
+3 & -0.05555\textcolor{red}{4} & -0.055556 \\
 4 & -0.031250 & -0.031250 \\
 5 & -0.020000 & -0.020000 \\
 \bottomrule
 \end{tabular}
 \caption{$E_{nl}$ in a.u. of The Hydrogen Atom}
 \end{figure}
-Notice, that the hydrogen's spectrum depends only on the energy level $n.$
+We have some problems with the convergence, because the potential $\eqref{h2_potrntial}$ is singular at point 0. Graphical illustration of the spectrum is the followng:
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.2\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{h2_atom.pdf}
+\end{subfigure}
+\caption{The Hydrogen Atom Spectrum (in a.u.)}
+\end{figure}
+
+\subsection{Woods-Saxon potential}
+The Woods-Saxon potential describes the interaction of the protons and neutrons with the heavy nucleus inside the atomic nucleus:
+$$V(r) = -\frac{V_0}{1+e^\frac{r-R}{a}},$$
+where $a<<R.$\\ 
+$R$ is a the nuclear radius, $a$ is the parameter that characterizes the thickness of a surface layer within which the potential falls from $V=0$ outside the nuclear to  $V = -V_0$ inside one. If let $a=0$, we obtain a potential well with a potential jump at the nuclear surface. \\
+The radial equation $\eqref{r_eq}$  says:
+$$-\frac{\hbar^2}{2m}\frac{\partial^2 u}{\partial r^2}+[-\frac{V_0}{1+e^\frac{r-R}{a}}+\frac{\hbar^2}{2m}\frac{l(l+1)}{r^2}]u = Eu.$$
+When using the Schrodinger equation to find the spectrum of nucleons subjected to the Woods–Saxon potential, it is impossible to find a analytical solution. Numerical method results are the following:
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{WS_poten.pdf}
+  \caption{Spectrum in case $l=0$ (a.u.)}
+  \label{fig1:WS_spc}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{WS_wave.pdf}
+  \caption{Wave functions in case $l=1$}
+  \label{fig:wave_func}
+\end{subfigure}
+\caption{Woods-Saxon potential}
+\label{fig:WS_potential}
+\end{figure}
+
+It is also possible  to solve this problem using  the Nikiforov-Uvarov method. 
+
+
+\subsection{Hulthen Potential}
+The Hulthen potential is given by
+$$V(r) = - V_0 \frac{e^{-\frac{r}{a}}}{1 - e^{-\frac{r}{a}}}$$
+Our problem to find the spectrum in case $l=0.$\\
+The radial part $\eqref{r_eq}$ of the Schrodinger equation in a.u.  says:
+$$-\frac{1}{2}\frac{\partial^2 u}{\partial r^2}+[- V_0 \frac{e^{-\frac{r}{a}}}{1 - e^{-\frac{r}{a}}} +\frac{1}{2}\frac{l(l+1)}{r^2}]u = Eu.$$
+The analytical solution is known:
+\begin{equation}\label{hult_sol}
+	E_n = -V_0\bigg(\frac{\beta^2 - n^2}{2n\beta}\bigg)^2,
+\end{equation}
+\begin{equation}\label{hult_cond}
+	\beta^2 > n^2, 
+\end{equation}
+where $\beta^2 = \displaystyle{\frac{2m V_0}{\hbar^2}a^2} > 0.$\\
+Rewrite \eqref{hult_sol} in the atomic units:
+$$E_n = -V_0\bigg(\frac{2 V_0 a^2 - n^2}{2n a \sqrt{2V_0}}\bigg)^2,$$
+and compare it with the numerical methods from section  \ref{sec:numerical}:
+\begin{figure}[h!]
+\centering
+\begin{tabular}{lrr}
+\toprule
+\centering
+$n$ &         Numerical &         Analytical \\
+\midrule
+1 & -\textcolor{red}{7.99988128221} & -8.0 \\
+2 & -0.12\textcolor{red}{4924678667} & -0.125 \\
+\bottomrule
+\end{tabular}
+\caption{$E_{n0}$ in a.u. for the Hulthen Potential}
+\end{figure}\\
+In our calculation we let $V_0 = 10 a.u.,~a = 0.5,$ so from the condition \ref{hult_cond}: $2.5 > n^2,$ we obtain only two energy levels.\\
+Notice, that the Hulthen potential behaves like  a Colomb potential at small values of $r:$
+$$V_c = -\frac{V_0 a}{r},$$
+and for large values of $r$ it decreases expotentially so that its "capacity" for bound states is smaller than that of $V_c.$
+
+
+\subsection{Morse potential}
+The Morse potential describes the vibrations of a two-atomic molecule:
+$$V(r) = D(e^{-2\alpha x} - 2e^{-\alpha x}),$$
+$$x= \frac{r-r_0}{r_0}.$$
+This formula is used to model the atom-surface interaction, and  $r$ is the coordinate perpendicular to the surface, $r_0$ is the equilibrium bond distance, $D$ is the well depth and $\alpha$ controls the 'width' of the potential (the smaller $\alpha$ is, the larger the well). \\
+The parametres $D,$ $\alpha$ and $r_0$ are known for some typical molecules such as $H_2$ or $H Cl$ from experiments. We will research the hydrogen atom with the following parametres: $D = 38292 cm^{-1}$, $\alpha= 1440,$ $r_0 = 0,13984.$ The problem is to find the spetrum for $l=0$ bond states. \\
+The radial equation 
+ in a. u.  says:
+$$-\frac{1}{2m}\frac{\partial^2 u}{\partial r^2}+[D(e^{-2\alpha x} - 2e^{-\alpha x})+\frac{1}{2m}]u = Eu.$$
+The analytical solution is known:
+$$E_n = -D + \hbar \omega [(n+\frac{1}{2}) - \frac{1}{\xi}(n+\frac{1}{2})^2],$$
+where $\xi = \frac$
+
+
+
+
+
+
+
+
+
+
+
 
 %\section{Conclusion}
 
