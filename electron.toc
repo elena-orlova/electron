@@ -1,0 +1,22 @@
+\select@language {russian}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Theoretical part}{3}
+\contentsline {subsection}{\numberline {2.1}Differential operators in spherical coordinates}{3}
+\contentsline {subsection}{\numberline {2.2}Some necessary special functions}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Spherical functions}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Bessel functions}{5}
+\contentsline {subsection}{\numberline {2.3}Angular momentum}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Eigenvalues and eigenfunctions}{6}
+\contentsline {subsection}{\numberline {2.4}Spin}{6}
+\contentsline {subsubsection}{\numberline {2.4.1}Spin $\frac {1}{2}$}{7}
+\contentsline {subsection}{\numberline {2.5}Perturbation theory}{7}
+\contentsline {subsection}{\numberline {2.6}Numerical methods for the solution of the Schrodinger equation}{8}
+\contentsline {section}{\numberline {3}Electron in spherically symmetric potentials}{9}
+\contentsline {subsection}{\numberline {3.1}Spherically symmetric potential well}{10}
+\contentsline {subsubsection}{\numberline {3.1.1}Infinite spherical well}{10}
+\contentsline {subsubsection}{\numberline {3.1.2}Finite spherical well}{11}
+\contentsline {subsection}{\numberline {3.2}Isotropic Harmonic Oscillator}{12}
+\contentsline {subsection}{\numberline {3.3}The Hydrogen Atom}{14}
+\contentsline {subsection}{\numberline {3.4}Woods-Saxon potential}{15}
+\contentsline {subsection}{\numberline {3.5}Hulthen Potential}{15}
+\contentsline {subsection}{\numberline {3.6}Morse potential}{16}
