@@ -28,6 +28,15 @@
 \usepackage{amssymb}
 \usepackage{enumerate}
 \usepackage{units}
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue  %choose some color if you want links to stand out
+}
+
 \long\def\comment{}
 
 \newtheorem{theorem}{Theorem}
@@ -58,8 +67,8 @@
 \addto\captionsrussian{\renewcommand{\refname}{References}}
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\refname}{References}
-\renewcommand*\contentsname{Contents}
 
+\addto\captionsrussian{\renewcommand{\contentsname}{Table of Contents}}
 \pdfsuppresswarningpagegroup=1
 
 \begin{document}
@@ -116,8 +125,7 @@ An important problem in quantum mechanics is a behaviour of a particle in a sphe
 The spectrum of particle consists of all possible values of energy. The study of particle spectra allows us to see the global picture of a particle behavior. 
 
 
-We are interested in finding a spectrum of an electron in spherically symmetric potentials, such as: the infinite and finite spherical potential well, the hydrogen-like atom; the Woods-Saxon, Hulthen, Morse, Yukawa potentials and the deutron model.
-
+We are interested in finding a spectrum of an electron in spherically symmetric potentials, such as: the infinite and finite spherical potential well, the hydrogen-like atom; the Woods-Saxon, Hulthen, Morse, Yukawa potentials and the deutron model. As a main source of analytical results we use \cite{flugge2012practical}.
 
 \section{Theoretical part}
 \subsection{Differential operators in spherical coordinates}\label{dif_op_3d}
@@ -161,7 +169,7 @@ Cartesian coordinates to Spherical coordinates:
 \end{equation}
 Laplacian is a differential operator given by the divergence of the gradient of a function on Euclidean space. Laplace operator in Cartesian coordinates:
  	$$\nabla^2= \frac{\partial^2}{\partial x^2}  + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$$
-So, using \eqref{sph_coord} we can find Laplasian in spherical coordinates:
+So, using \eqref{sph_coord} we can find Laplacian in spherical coordinates:
 \begin{equation}\label{sph_lap}
 	\nabla^2 = \frac{1}{r^2} \frac{\partial}{\partial r}({r^2}\frac{\partial f}{\partial r})+\frac{1}{r^2\sin{\theta}}\frac{\partial}{\partial \theta}(\sin{\theta}\frac{\partial f}{\partial \theta})+\frac{1}{r^2\sin^2{\theta}}(\frac{\partial^2 f}{\partial \phi^2})
 \end{equation}
@@ -694,7 +702,7 @@ The analytical solution is known:
 \begin{equation}\label{h2_sol}
    E_n = -\frac{1}{2 n^2}
 \end{equation}
-Notice, that the hydrogen's spectrum depends only on the energy level $n.$ \textcolor{green}{The reason that the energy level depends only on n is that for just one electron the only force acting on it is the coulomb force between the nucleus and the electron. As such this is the only force that dictates the potential energy term in the Schrodinger equation. In this case the strength of the coulomb force between the hydrogen nucleus and the electron only depends on the distance between the two and the charge involved (2q in this case). The force is spherically symmetric (aka rotationally invariant) so it doesn't matter where around the hydrogen nucleus an electron is. As long as the distance between the two is constant the strength of the force is constant. Hence, the energy is constant}.\\
+Notice, that the hydrogen's spectrum depends only on the energy level $n.$ The reason that the energy level depends only on n is that for just one electron the only force acting on it is the coulomb force between the nucleus and the electron. As such this is the only force that dictates the potential energy term in the Schrodinger equation. In this case the strength of the coulomb force between the hydrogen nucleus and the electron only depends on the distance between the two and the charge involved (2q in this case). The force is spherically symmetric (aka rotationally invariant) so it doesn't matter where around the hydrogen nucleus an electron is. As long as the distance between the two is constant the strength of the force is constant. Hence, the energy is constant.\\
 We used the numerical methods from section $\ref{sec:numerical},$ and results are the following:
 \begin{figure}[h!]
 \centering
@@ -879,7 +887,7 @@ $$E_{nl}^{Coulomb} = -\frac{1}{2} m \frac{V_0^2}{n_l^2},$$
 where $n_l = n+l+1.$
 
 \subsection{Central-force model of deuteron}
-lol
+...
 
 \section{Conclusion}
 In this work I have researched the spectrum problem of a  particle in some spherically symmetric potentials by using a numerical method based on finite differences. The numerical results obtained by this method are compared with the analytical solutions for most of the potentials. 
@@ -889,6 +897,6 @@ In this work I have researched the spectrum problem of a  particle in some spher
 
 %$$\lambda \sin^2 {\theta}+\frac{\sin{\theta}}{\theta}\frac{\d}{\d \theta}$$
 
-%\bibliography{electron}
-%\bibliographystyle{plain}
+\bibliography{electron}
+\bibliographystyle{plain}
 \end{document}
