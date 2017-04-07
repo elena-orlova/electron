@@ -110,13 +110,13 @@
 	
 \section{Introduction}
 
-An important problem in quantum mechanics is a benaviour of a particle in a spherically symmetric potential, which depends only on the distance between the particle and a defined center point. An electron in the potential derived from Coulomb's law is well-known example. The problem can be used to describe a hydrogen-like atom. 
+An important problem in quantum mechanics is a behaviour of a particle in a spherically symmetric potential, which depends only on the distance between the particle and a defined center point. An electron in the potential derived from Coulomb's law is well-known example. The problem can be used to describe a hydrogen-like atom. 
 
 
-The spectrum of particle consists of all possible values of energy. The study of particle spectra allows us to see the global picture of particle behavior. 
+The spectrum of particle consists of all possible values of energy. The study of particle spectra allows us to see the global picture of a particle behavior. 
 
 
-We are interested in finding a spectrum of electron in spherically symmetric potentials, such as: infinite and finite spherical potential well, quadratic potential, hydrogen-like atom; Woods-Saxon, Hulthen, Morse, Yukawa potentials and deuterium potential.
+We are interested in finding a spectrum of an electron in spherically symmetric potentials, such as: the infinite and finite spherical potential well, the hydrogen-like atom; the Woods-Saxon, Hulthen, Morse, Yukawa potentials and the deutron model.
 
 
 \section{Theoretical part}
@@ -753,33 +753,35 @@ It is also possible  to solve this problem using  the Nikiforov-Uvarov method.
 
 \subsection{Hulthen Potential}
 The Hulthen potential is given by
-$$V(r) = - V_0 \frac{e^{-\frac{r}{a}}}{1 - e^{-\frac{r}{a}}}$$
+\begin{equation}
+V(r) = - V_0 \frac{e^{-\frac{r}{a}}}{1 - e^{-\frac{r}{a}}}.
+\end{equation}
 Our problem to find the spectrum in case $l=0.$\\
 The radial part $\eqref{r_eq}$ of the Schrodinger equation in a.u.  says:
 $$-\frac{1}{2}\frac{\partial^2 u}{\partial r^2}+[- V_0 \frac{e^{-\frac{r}{a}}}{1 - e^{-\frac{r}{a}}} +\frac{1}{2}\frac{l(l+1)}{r^2}]u = Eu.$$
 The analytical solution is known:
 \begin{equation}\label{hult_sol}
-	E_n = -V_0\bigg(\frac{\beta^2 - n^2}{2n\beta}\bigg)^2,
+E_n = -V_0\bigg(\frac{\beta^2 - n^2}{2n\beta}\bigg)^2,
 \end{equation}
 \begin{equation}\label{hult_cond}
-	\beta^2 > n^2, 
+\beta^2 > n^2, 
 \end{equation}
 where $\beta^2 = \displaystyle{\frac{2m V_0}{\hbar^2}a^2} > 0.$\\
 Rewrite \eqref{hult_sol} in the atomic units:
 $$E_n = -V_0\bigg(\frac{2 V_0 a^2 - n^2}{2n a \sqrt{2V_0}}\bigg)^2,$$
 and compare it with the numerical methods from section  \ref{sec:numerical}:
-\begin{figure}[h!]
-\centering
-\begin{tabular}{lrr}
-\toprule
-\centering
-$n$ &         Numerical &         Analytical \\
-\midrule
-1 & -\textcolor{red}{7.99988128221} & -8.0 \\
-2 & -0.12\textcolor{red}{4924678667} & -0.125 \\
-\bottomrule
-\end{tabular}
-\caption{$E_{n0}$ in a.u. for the Hulthen Potential}
+\begin{figure}
+	\centering
+	\begin{tabular}{lrr}
+		\toprule
+		\centering
+		$n$ &         Numerical &         Analytical \\
+		\midrule
+		1 & -\textcolor{red}{7.99988128221} & -8.0 \\
+		2 & -0.12\textcolor{red}{4924678667} & -0.125 \\
+		\bottomrule
+	\end{tabular}
+	\caption{$E_{n0}$ in a.u. for the Hulthen Potential}
 \end{figure}\\
 In our calculation we let $V_0 = 10 a.u.,~a = 0.5,$ so from the condition \ref{hult_cond}: $2.5 > n^2,$ we obtain only two energy levels.\\
 Notice, that the Hulthen potential behaves like  a Colomb potential at small values of $r:$
@@ -789,16 +791,103 @@ and for large values of $r$ it decreases expotentially so that its "capacity" fo
 
 \subsection{Morse potential}
 The Morse potential describes the vibrations of a two-atomic molecule:
-$$V(r) = D(e^{-2\alpha x} - 2e^{-\alpha x}),$$
+\begin{equation}
+V(r) = D(e^{-2\alpha x} - 2e^{-\alpha x}), 
+\end{equation}
 $$x= \frac{r-r_0}{r_0}.$$
 This formula is used to model the atom-surface interaction, and  $r$ is the coordinate perpendicular to the surface, $r_0$ is the equilibrium bond distance, $D$ is the well depth and $\alpha$ controls the 'width' of the potential (the smaller $\alpha$ is, the larger the well). \\
 The parametres $D,$ $\alpha$ and $r_0$ are known for some typical molecules such as $H_2$ or $H Cl$ from experiments. We will research the hydrogen atom with the following parametres: $D = 38292 cm^{-1}$, $\alpha= 1440,$ $r_0 = 0,13984.$ The problem is to find the spetrum for $l=0$ bond states. \\
 The radial equation 
- in a. u.  says:
+in a. u.  says:
 $$-\frac{1}{2m}\frac{\partial^2 u}{\partial r^2}+[D(e^{-2\alpha x} - 2e^{-\alpha x})+\frac{1}{2m}]u = Eu.$$
 The analytical solution is known:
 $$E_n = -D + \hbar \omega [(n+\frac{1}{2}) - \frac{1}{\xi}(n+\frac{1}{2})^2],$$
-where $\xi = \frac$
+where $\xi = \frac{2 \gamma}{\alpha},$ $\gamma^2 = \frac{2 M D r_0^2}{\hbar^2},$ and $\omega$ can be found from the following equation: $\hbar \omega = \frac{\hbar^2}{2 M  r_0^2}.$\\
+We used the numerical method from section \ref{sec:numerical}. Results are the following:
+\\
+\begin{tabular}{lrr}[h!]
+	\toprule
+	$n$ &      Numerical & Analytical \\
+	\midrule
+	0 & -0.70\textcolor{red}{6884} & -0.707390 \\
+	1 & -0.68\textcolor{red}{6828} & -0.688970 \\
+	2 & -0.6\textcolor{red}{67061} & -0.671669 \\
+	3 & -0.6\textcolor{red}{47583} & -0.655489 \\
+	4 & -0.6\textcolor{red}{28393} & -0.640428 \\
+	5 & -0.6\textcolor{red}{09493} & -0.626487 \\
+	6 & -0.\textcolor{red}{590881} & -0.613665 \\
+	7 & -0.\textcolor{red}{572558} & -0.601964 \\
+	8 & -0.5\textcolor{red}{54524} & -0.591382 \\
+	9 & -0.5\textcolor{red}{36779} & -0.581920 \\
+	\bottomrule
+\end{tabular}
+Notice, that at large distances the potential corresponds to the attraction forces, it comes to a minimum $-D$ at $x=O$ or $r=ro_0$, but produces a strong repulsion if the two nuclei approach even closer.\\
+Around $x=0$ it may be expanded into a series:
+\begin{equation}\label{morse_seq}
+V(r) = D(-1 + \alpha^2 x^2+...) = -D + \frac{1}{2}M \omega^2(r-r_0)^2 +...,
+\end{equation}
+where $\omega^2 = \frac{2D \alpha^2}{M r_o^2}.$\\
+Thus, for low vibrational levels, a spectrum  not
+deviating very much from that of a harmonic oscillator:
+$$E (\nu) = -D + \hbar \omega (\nu + \frac{1}{2}),~~\nu = 0,~1,~2, ...,$$
+with $\nu$ the vibrational quantum number, the almost equidistant terms becoming increasingly denser with increasing energy, in consequence of the anharmonicity neglected in \ref{morse_seq}. 
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{morse_pot.pdf}
+	\end{subfigure}
+	\caption{Morse potential}
+\end{figure}
+
+\subsection{Yukawa Potential}
+The Yukawa potential is used to  describe the nuclear attraction between two particles (for example,nucleons), it is often used to compute the spectrum of neutral atoms.\\ 
+The Yukawa potential is given by
+\begin{equation}\label{yukawa_pot}
+V(r) = -V_0\frac{e^{a r}}{r},
+\end{equation}
+where $V_0 = \alpha Z$ and $Z$ is the atomic number, $\alpha = \frac{1}{137}$ is the fine-structure constant and $a$ is the screening parameter.
+Our problem is to find the spectrum. The radial part $\eqref{r_eq}$ of the Schrodinger equation in a.u. becomes:
+$$-\frac{1}{2}\frac{\partial^2 u}{\partial r^2}+[-V_0\frac{e^{a r}}{r} +\frac{1}{2}\frac{l(l+1)}{r^2}]u = Eu.$$
+No exact analytical solution was found, however some approximate analytical solution was obtained using Nikiforof-Uvarov method: 
+\begin{equation}\label{yukawa_sol}
+E_{nl} = -\frac{a^2}{2m}\frac{(\displaystyle{\frac{m V_0}{a}} - (n+1)^2 - l(2n+l+2))^2}{(n+l+1)^2}
+\end{equation}
+Compare results of numerical method from the section \ref{sec:numerical} and formula \eqref{yukawa_sol} if $l = 0$:
+\begin{figure}[h!]
+	\centering
+	\begin{tabular}{lrr}
+		\toprule
+		{n} &  Numerical   &         App. Analytical \\
+		\midrule
+		0 & -0.09\textcolor{red}{6186} & -0.097882 \\
+		1 & -0.024\textcolor{red}{362} & -0.024470 \\
+		2 & -0.0108\textcolor{red}{54} & -0.010876 \\
+		3 & -0.00611\textcolor{red}{1} & -0.006118 \\
+		4 & -0.00391\textcolor{red}{2} & -0.003915 \\
+		5 & -0.00271\textcolor{red}{7} & -0.002719 \\
+		6 & -0.001997 & -0.001997 \\
+		7 & -0.001529 & -0.001529 \\
+		8 & -0.001208 & -0.001208 \\
+		9 & -0.00097\textcolor{red}{8} & -0.000979 \\
+		\bottomrule
+	\end{tabular}
+	\caption{$E_{n0}$ in a.u. for the Yukawa Potential}
+\end{figure}\\
+If the screening parameter $ a\to 0$, the potential \eqref{yukawa_pot} becomes the Coulomb potential. Hence, the eigenvalues of \eqref{yukawa_sol} become the spectrum of pure Coulomb potential:
+$$E_{nl}_{Coulomb} = -\frac{1}{2} m \frac{V_0^2}{n'^2},$$
+where $n' = n+l+1.$
+
+
+
+
+\subsection{Central-force model of deuteron}
+
+
+...
+
+\section{Conclusion}
+In this work I have researched the spectrum problem of a  particle in some spherically symmetric potentials by using a numerical method called finite difference method. The numerical results are obtained by this method and compared with the analytical solution. 
 
 
 
@@ -811,7 +900,8 @@ where $\xi = \frac$
 
 
 
-%\section{Conclusion}
+
+
 
 %\section{Appendix}\label{appendix}
 
