@@ -887,10 +887,127 @@ $$E_{nl}^{Coulomb} = -\frac{1}{2} m \frac{V_0^2}{n_l^2},$$
 where $n_l = n+l+1.$
 
 \subsection{Central-force model of deuteron}
-...
+
+The neutron-proton interaction in the idealized situation is described by the following potential:
+$$V(r) = - A e^{-r/a}$$
+Our problem is to solve the Schrodinger equation for the bound state with $l=0$ (deuteron). As it was determined by experiment there exists only one bound state:
+\begin{equation}
+    E = -2.23~\mathrm{MeV}
+\end{equation}
+
+
+\subsubsection{Exact solution}
+For $l = 0$ we obtain the following radial Schrodinger equation \eqref{r_eq}:
+\begin{equation}
+    \frac{d^2 u}{d r^2} + \frac{2 m^*}{\hbar^2}(E+ A e^{-r/a})u = 0,
+\end{equation}
+where $m^* = \frac{1}{2}$, because we let masses of both nucleons equal. Use of the new variable:
+\begin{equation}\label{abbr}
+    y = e^{-r/2a}
+\end{equation}
+we obtain:
+\begin{equation}\label{eq_bess_d}
+    \frac{d^2 u}{d y^2} + \frac{1}{y}\frac{d u}{d y} + (c^2 - \frac{q^2}{y^2})u=0,
+\end{equation}
+where
+\begin{equation}\label{abbr_2}
+    c^2 = \frac{8 m^*}{\hbar^2}A a^2,~~q^2 = -\frac{8 m^*}{\hbar^2}E a^2 > 0
+\end{equation}
+The equation  \eqref{eq_bess_d} is Bessel's differential equation \eqref{bess_eq} with the general solution:
+$$u = C_1 J_q(cy) + C_2 J_{-q} (cy).$$
+One the one hand, $r$ blows up if $y = 0$ where $u$ must vanish. Therefore $C_2 = 0:$
+\begin{equation}\label{ex_sol_deuteron}
+    u = \frac{C_1}{r}J_q(c e^{-r/2a})
+\end{equation}
+On the other hand, $y = 1$ corresponds to $r = 0$ where $u$ must be finite so that the Bessel function in bound to vanish:
+$$J_q(c) = 0.$$
+On the grounds of known numerical values of $m^*$ and $E$ we obtain from \eqref{abbr_2}:
+
+\subsubsection{Approximate solution}
+The wave function
+$$\widetilde{u} = \frac{C}{r}\displaystyle{\big(e^{-\frac{qr}{2a}} - e^{-\frac{qr}{a}}\big)} $$
+has a finite value
+$$u(0) = C\frac{q}{2a}$$
+at $r=0,$ and decreases, for large $r,$ exponentially with the correct decay length:
+$$\exp\bigg(-\frac{qr}{2a}\bigg) = \exp\bigg(-r \sqrt{\frac{2 m^* |E|}{\hbar^2}}\bigg).$$
+The normalization constant $C$ can be obtained from 
+$$4 \pi \displaystyle{\int\limits_{0}^ {\infty}} dr~ r^2 \widetilde{u}(r)^2 = 1;$$
+\begin{equation}
+    C = \sqrt{\frac{3q}{2 \pi a}}.
+\end{equation}
+We determine the expectation value of the energy with this wave function by using the Schrodinger variational principle:
+\begin{equation}\label{integral}
+    E = 4 \pi \int\limits_{0}^{\infty} dr ~r^2 \bigg[\frac{\hbar^2}{2 m^*}(du/dr)^2 -A e ^{-r/a} u^2\bigg]
+\end{equation}
+The exact solution \eqref{ex_sol_deuteron} put into \eqref{integral}, the exact eigenvalue $E$ would result. Using instead the approximate function $\widetilde{u}$, we find the approximate eigenvalue $\widetilde{E}$.\\
+The evaluation of \eqref{integral} with \eqref{ex_sol_deuteron} has the following form:
+\begin{equation}
+    E = \frac{\hbar^2}{4 m^* a^2}q^2 - 6 A \bigg[\frac{1}{1 + \frac{1}{q}} - \frac{1}{\frac{3}{2} + \frac{1}{q}} +  \frac{1}{2 + \frac{1}{q}} \bigg]
+\end{equation}
+Some numerical results: $\widetilde{E}$=-2.18 MeV if $a$ = 2.18 fm and $A$ = 32.7 MeV. The correct value $E$ = -2.23 MeV.
+
 
 \section{Conclusion}
-In this work I have researched the spectrum problem of a  particle in some spherically symmetric potentials by using a numerical method based on finite differences. The numerical results obtained by this method are compared with the analytical solutions for most of the potentials. 
+In this work I have researched the spectrum problem of a particle in some spherically symmetric potentials by using a numerical method called finite difference method. The numerical results are obtained by this method and compared with the analytical solution. 
+
+
+
+
+\section{Appendix}\label{appendix}
+The purpose of this section is to expand on some of the techniques and values used in numerical computations. All programs are written on Python 3.
+\begin{center}
+		\large
+		\textbf{ Infinite spherical well}		\\[0.5 cm]
+\end{center}
+The potential is defined by 
+$$E_{nl} = \frac{\hbar^2}{2ma^2}\beta_{nl}^2,$$
+where $\beta_{nl}$ -  $n^{th}$ zero of the $l^{th}$ spherical Bessel function $j_n(x) = (-x)^n\bigg(\displaystyle{\frac{1}{x} \frac{d}{dx}}\bigg)^n \frac{\sin{x}}{x}.$
+Zeros are known:
+\begin{figure}[h!]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+{} &  \ $n=1$ &   $n=2$ &   $n=3$ &   $n=4$ \\
+\midrule
+$l=0$ &  3.142 &   6.283 &   9.425 &  12.566 \\
+$l=1$ &  4.493 &   7.725 &  10.904 &  14.066 \\
+$l=2$ &  5.763 &   9.095 &  12.323 &  15.515 \\
+$l=3$ &  6.988 &  10.417 &  13.698 &  16.924 \\
+$l=4$ &  8.183 &  11.705 &  15.040 &  18.301 \\
+\bottomrule
+\end{tabular}
+\caption{Bessel Function Zeros}
+\end{figure}
+We assume atomic units, so $\hbar =  1$, $m=  1$ .As an example we consider infinite spherical well with $a= 5$ a.u.
+\begin{lstlisting}[frame=single]
+#Bessel function zeros array
+n = 5
+A = [] 
+for i in range(n): 
+    A.append(list(map(float, input().split())))
+    
+a=5
+E = Arr**2 / (2.0 * a**2)
+df = pd.DataFrame(E)
+df.columns = [r"$n=1$", r"$n=2$", r"$n=3$", r"$n=4$"]
+df
+\end{lstlisting}
+The result of running this code is represented on Figure \ref{fig:inf_well}.
+\pagebreak
+
+
+\begin{center}
+		\large
+		\textbf{Finite spherical well}		\\[0.5 cm]
+\end{center}
+In case $l=0$ the particle spectrum is defined by the following formula:
+
+
+
+%$$\lambda \sin^2 {\theta}+\frac{\sin{\theta}}{\theta}\frac{\d}{\d \theta}$$
+
+%\bibliography{electron}
+%\bibliographystyle{plain}
 
 
 %\section{Appendix}\label{appendix}
