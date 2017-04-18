@@ -979,19 +979,7 @@ $l=4$ &  8.183 &  11.705 &  15.040 &  18.301 \\
 \caption{Bessel Function Zeros}
 \end{figure}
 We assume atomic units, so $\hbar =  1$, $m=  1$ .As an example we consider infinite spherical well with $a= 5$ a.u.
-\begin{lstlisting}[frame=single]
-#Bessel function zeros array
-n = 5
-A = [] 
-for i in range(n): 
-    A.append(list(map(float, input().split())))
-    
-a=5
-E = Arr**2 / (2.0 * a**2)
-df = pd.DataFrame(E)
-df.columns = [r"$n=1$", r"$n=2$", r"$n=3$", r"$n=4$"]
-df
-\end{lstlisting}
+
 The result of running this code is represented on Figure \ref{fig:inf_well}.
 \pagebreak
 

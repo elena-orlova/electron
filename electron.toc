@@ -22,4 +22,7 @@
 \contentsline {subsection}{\numberline {3.6}Morse potential}{16}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Yukawa Potential}{17}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Central-force model of deuteron}{19}{subsection.3.8}
-\contentsline {section}{\numberline {4}Conclusion}{19}{section.4}
+\contentsline {subsubsection}{\numberline {3.8.1}Exact solution}{19}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Approximate solution}{19}{subsubsection.3.8.2}
+\contentsline {section}{\numberline {4}Conclusion}{20}{section.4}
+\contentsline {section}{\numberline {5}Appendix}{20}{section.5}
