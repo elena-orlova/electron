@@ -1,0 +1,84 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[14pt]{extsizes}
+
+\makeatletter
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+\makeatother
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=1cm]{geometry}
+%\renewcommand{\baselinestretch}{1.2}
+%\newcommand{\jj}{\righthyphenmin=20 \justifying}
+\usepackage{ragged2e}
+\justifying
+\usepackage{booktabs}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{units}
+\long\def\comment{}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\usepackage{listings} 
+\lstset{language=Python} 
+
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\graphicspath{{./pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{physics}
+\usepackage{hyperref}
+
+
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\slfrac}[2]{\left.#1/#2\right.}
+\newcommand{\Int}[4]{\displaystyle \int_{#1}^{#2} #3 \diff #4}
+\newcommand{\Intu}[3]{\displaystyle \int_{#1}^{#2} #3}
+
+\addto\captionsrussian{\renewcommand{\figurename}{Fig.}}
+\addto\captionsrussian{\renewcommand{\refname}{References}}
+\addto\captionsrussian{\renewcommand{\contentsname}{Contents}}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\refname}{References}
+\renewcommand*\contentsname{Contents}
+
+\pdfsuppresswarningpagegroup=1
+
+\begin{document}
+\textbf{Abstract}\\
+
+One of the most actual problems in atomic and nuclear physics is calculation of the energy spectrum of a particle in a spherically symmetric potential, i.e. potential that depends only on the distance between the particle and the force center.
+
+During the working on this task various numerical methods were implemented to calculate the particle spectrum in spherically symmetric potentials. Specifically the following potentials were used: potential of the infinite and the finite spherical wells; potential of the isotropic harmonic oscillator; the Coulomb potential; potentials of Woods-Saxon, Hulthen, Morse and Yukawa. The spherically symmetric potential of the strong neutron-proton interaction in the deuteron model was also investigated.
+
+\textbf{Аннотация}
+
+Одной из актуальных задач в атомной и ядерной физике является расчет энергетического спектра частицы в сферически симметричном потенциале, который зависит только от расстояния между частицей и силовым центром.
+
+В ходе выполнения настоящей курсовой работы были реализованы различные численные методы для расчета спектра частиц в сферически симметричных потенциалах. Конкретно были использованы такие потенциалы как: потенциал бесконечной и конечной сферической потенциальной ямы; потенциал изотропного гармонического осциллятора; кулоновский потенциал; потенциалы Вуда-Саксона, Хюльтена, Морса и Юкавы. Также исследовался сферически симметричный потенциал сильного взаимодействия нейтрона и протона в модели дейтрона.
+\end{document}

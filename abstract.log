@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  14 MAY 2017 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  13 MAY 2017 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**electron.tex
-(./electron.tex
+**abstract.tex
+(./abstract.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -167,14 +167,21 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-russian/russianb.ldf
-Language: russianb 2016/02/18 1.3h Russian support for the Babel system
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count99
 \U@D=\dimen131
 )
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-russian/russianb.ldf
+Language: russianb 2016/02/18 1.3h Russian support for the Babel system
+
 
 Package babel Warning: No Cyrillic font encoding has been loaded so far.
 (babel)                A font encoding should be declared before babel.
@@ -1847,29 +1854,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip72
 )
-(./electron.aux
+(./abstract.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 20.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-
-LaTeX Warning: Label `r_eq' multiply defined.
-
-
-LaTeX Warning: Label `fig1:tan-sqrt' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig1:tan-sqrt' multiply defined.
-
-
-LaTeX Warning: Label `fig:finite_well_sol' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:finite_well_sol' multiply defined.
-
-)
-\openout1 = `electron.aux'.
+))
+\openout1 = `abstract.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
@@ -1887,7 +1878,8 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 72.
@@ -2001,633 +1993,150 @@ LaTeX Info: Redefining \ref on input line 72.
 LaTeX Info: Redefining \pageref on input line 72.
 LaTeX Info: Redefining \nameref on input line 72.
 
-(./electron.out) (./electron.out)
+(./abstract.out) (./abstract.out)
 \@outlinefile=\write4
-\openout4 = `electron.out'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 110.
- [1
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./elec
-tron.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write5
-\openout5 = `electron.toc'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 118.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 118.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 118.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 118.
- [2]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 119.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 129.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 130.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 130.
+\openout4 = `abstract.out'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 172.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 172.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 172.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 172.
-[3]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 176.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 176.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 178.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 178.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 190.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 190.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 190.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 190.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 201.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 201.
-<./pictures/bessel1.pdf, id=190, 445.76137pt x 301.22137pt>
-File: ./pictures/bessel1.pdf Graphic file (type pdf)
 
-<use ./pictures/bessel1.pdf>
-Package pdftex.def Info: ./pictures/bessel1.pdf used on input line 223.
-(pdftex.def)             Requested size: 256.07481pt x 173.04466pt.
-
-<./pictures/bessel2.pdf, id=191, 445.76137pt x 301.22137pt>
-File: ./pictures/bessel2.pdf Graphic file (type pdf)
-
-<use ./pictures/bessel2.pdf>
-Package pdftex.def Info: ./pictures/bessel2.pdf used on input line 229.
-(pdftex.def)             Requested size: 256.07481pt x 173.04466pt.
+Overfull \hbox (54.95041pt too wide) in paragraph at lines 81--82
+[]\T2A/cmr/m/n/14.4 Одной из актуальных задач в атом
+ной
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (22.32086pt too wide) in paragraph at lines 81--82
+\T2A/cmr/m/n/14.4 энергетического спектра частицы
+ []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 238.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 238.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 240.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 240.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 240.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 240.
-[5]
-Overfull \hbox (6.0194pt too wide) in paragraph at lines 255--257
-\T2A/cmr/m/n/14.4 In the next section we will consider the eigenvalues and eige
-nfunctions of these operators. 
+
+Overfull \hbox (83.60896pt too wide) in paragraph at lines 81--82
+\T2A/cmr/m/n/14.4 в сферически симметричном потенц
+иале,
+ []
+
+
+Overfull \hbox (77.83345pt too wide) in paragraph at lines 81--82
+\T2A/cmr/m/n/14.4 который зависит только от рассто�
+�ния
+ []
+
+
+Package caption Warning: Unused \captionsetup[sub] on input line 45.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (83.27083pt too wide) in paragraph at lines 83--84
+[]\T2A/cmr/m/n/14.4 В ходе выполнения настоящей кур�
+�овой
+ []
+
+
+Overfull \hbox (34.67584pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 работы были реализованы различны
+е
+ []
+
+
+Overfull \hbox (79.80977pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 численные методы для расчета спе�
+�тра
+ []
+
+
+Overfull \hbox (37.93619pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 частиц в сферически симметричных
+
+ []
+
+
+Overfull \hbox (138.86478pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 потенциалах. Конкретно были испо�
+�ьзованы
+ []
+
+
+Overfull \hbox (156.63358pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 такие потенциалы как: потенциал б
+есконечной
+ []
+
+
+Overfull \hbox (71.76126pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 и конечной сферической потенциал
+ьной
+ []
+
+
+Overfull \hbox (140.33871pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 ямы; потенциал изотропного гармо�
+�ического
+ []
+
+
+Overfull \hbox (45.45831pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 осциллятора; кулоновский потенци
+ал;
+ []
+
+
+Overfull \hbox (22.10826pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 потенциалы Вуда-Саксона, Хюльтен�
+�,
+ []
+
+
+Overfull \hbox (48.3206pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 сферически симметричный потенци�
+�л
+ []
+
+
+Overfull \hbox (6.1455pt too wide) in paragraph at lines 83--84
+\T2A/cmr/m/n/14.4 сильного взаимодействия нейтрон�
+�
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 282.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 282.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 282.
-[6 <./pictures/bessel1.pdf> <./pictures/bessel2.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 307.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 307.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 320.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 84.
+[1
 
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 320.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 320.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 320.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 320.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 320.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 327.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 327.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 327.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 327.
-[7]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 366.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 366.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 379.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 379.
- [8]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 389.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 389.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 403.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 403.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 403.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 403.
- [9]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 455.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 455.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
- [10]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 488.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 488.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 490.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 490.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 495.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 495.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 495.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 495.
- [11]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 522.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 522.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 522.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 522.
- [12]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 549.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 549.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 567.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 567.
- [13]
-Overfull \hbox (6.18576pt too wide) in paragraph at lines 572--574
-\T2A/cmr/m/n/14.4 The solution of the quation [] is a spherical Hankel function
- of an imaginary argument: 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 595.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 595.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 595.
-[14] <tan-sqrt.pdf, id=338, 433.62pt x 289.08pt>
-File: tan-sqrt.pdf Graphic file (type pdf)
- <use tan-sqrt.pdf>
-Package pdftex.def Info: tan-sqrt.pdf used on input line 608.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-<ens_finite.pdf, id=339, 433.62pt x 289.08pt>
-File: ens_finite.pdf Graphic file (type pdf)
- <use ens_finite.pdf>
-Package pdftex.def Info: ens_finite.pdf used on input line 614.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-<ens_fig_l1.pdf, id=341, 433.62pt x 289.08pt>
-File: ens_fig_l1.pdf Graphic file (type pdf)
- <use ens_fig_l1.pdf>
-Package pdftex.def Info: ens_fig_l1.pdf used on input line 628.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-<energies_l1.pdf, id=342, 433.62pt x 289.08pt>
-File: energies_l1.pdf Graphic file (type pdf)
- <use energies_l1.pdf>
-Package pdftex.def Info: energies_l1.pdf used on input line 634.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 642.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 642.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 644.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 644.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 644.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 644.
-[15 <./tan-sqrt.pdf> <./ens_finite.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<harm_osc.pdf, id=440, 433.62pt x 289.08pt>
-File: harm_osc.pdf Graphic file (type pdf)
- <use harm_osc.pdf>
-Package pdftex.def Info: harm_osc.pdf used on input line 695.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-<harm_osc1.pdf, id=441, 433.62pt x 289.08pt>
-File: harm_osc1.pdf Graphic file (type pdf)
- <use harm_osc1.pdf>
-Package pdftex.def Info: harm_osc1.pdf used on input line 701.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 709.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 709.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 709.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 709.
-[16 <./ens_fig_l1.pdf> <./energies_l1.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 711.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 711.
-
-<h2_atom.pdf, id=534, 144.54pt x 361.35pt>
-File: h2_atom.pdf Graphic file (type pdf)
- <use h2_atom.pdf>
-Package pdftex.def Info: h2_atom.pdf used on input line 746.
-(pdftex.def)             Requested size: 102.42836pt x 256.06956pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 753.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 753.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 757.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 757.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 757.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 757.
-[17 <./harm_osc.pdf> <./harm_osc1.pdf>]
-<WS_poten.pdf, id=616, 433.62pt x 289.08pt>
-File: WS_poten.pdf Graphic file (type pdf)
- <use WS_poten.pdf>
-Package pdftex.def Info: WS_poten.pdf used on input line 767.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-<WS_wave.pdf, id=617, 433.62pt x 289.08pt>
-File: WS_wave.pdf Graphic file (type pdf)
- <use WS_wave.pdf>
-Package pdftex.def Info: WS_wave.pdf used on input line 773.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 780.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 780.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 780.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 780.
- [18 <./h2_atom.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 783.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 783.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 818.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 818.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 818.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 818.
-[19 <./WS_poten.pdf> <./WS_wave.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 822.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 822.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 862.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 862.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 862.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 862.
-[20] <morse_pot.pdf, id=745, 433.62pt x 289.08pt>
-File: morse_pot.pdf Graphic file (type pdf)
- <use morse_pot.pdf>
-Package pdftex.def Info: morse_pot.pdf used on input line 872.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-Overfull \hbox (28.24988pt too wide) in paragraph at lines 866--877
-\T2A/cmr/m/n/14.4 with $\OML/cmm/m/it/14.4 ^^W$ \T2A/cmr/m/n/14.4 the vibration
-al quantum number, the almost equidistant terms becoming increasingly
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 878.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 878.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 881.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 881.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 881.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 881.
-[21 <./morse_pot.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 920.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 920.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 922.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 922.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 922.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 922.
- [22]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 930.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 930.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 957.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 957.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 963.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 963.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 963.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 963.
- [23]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 980.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 980.
- <h2_grid.pdf, id=811, 433.62pt x 289.08pt>
-File: h2_grid.pdf Graphic file (type pdf)
-
-<use h2_grid.pdf>
-Package pdftex.def Info: h2_grid.pdf used on input line 986.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 994.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 994.
-
-Overfull \hbox (4.00203pt too wide) in paragraph at lines 997--999
-\T2A/cmr/m/n/14.4 eigenvalue problem. We used the second-order discretization s
-cheme for the Hamiltonian
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 999.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 999.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 999.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 999.
-[24]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1002.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1002.
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 100
-3.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1034.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1034.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1034.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1034.
-[25 <./h2_grid.pdf>] <wave_func_l0.pdf, id=879, 578.16pt x 578.16pt>
-File: wave_func_l0.pdf Graphic file (type pdf)
-
-<use wave_func_l0.pdf>
-Package pdftex.def Info: wave_func_l0.pdf used on input line 1047.
-(pdftex.def)             Requested size: 256.07481pt x 256.06737pt.
- <finite_3.pdf, id=880, 433.62pt x 289.08pt>
-File: finite_3.pdf Graphic file (type pdf)
-
-<use finite_3.pdf>
-Package pdftex.def Info: finite_3.pdf used on input line 1053.
-(pdftex.def)             Requested size: 256.07481pt x 170.72333pt.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1062.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1062.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1062.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1062.
- [26 <./wave_func_l0.pdf> <./finite_3.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1096.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1096.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1096.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1096.
- [27]
-(./electron.bbl
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8.
- [28])
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1132.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1132.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1132.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1132.
- [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1132.
- (./electron.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1132.
-
-Package rerunfilecheck Info: File `electron.out' has not changed.
-(rerunfilecheck)             Checksum: 056796BBEFEEAE03E772033324EB7C1A;4913.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1132.
+(./abstract.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package rerunfilecheck Info: File `abstract.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 32733 strings out of 493014
- 593401 string characters out of 6133352
- 610537 words of memory out of 5000000
- 35677 multiletter control sequences out of 15000+600000
- 26093 words of font info for 75 fonts, out of 8000000 for 9000
+ 32003 strings out of 493014
+ 580928 string characters out of 6133352
+ 597783 words of memory out of 5000000
+ 35138 multiletter control sequences out of 15000+600000
+ 5860 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,58p,10405b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,58p,10405b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on electron.pdf (29 pages, 1977037 bytes).
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on abstract.pdf (1 page, 42952 bytes).
 PDF statistics:
- 1057 PDF objects out of 1200 (max. 8388607)
- 709 compressed objects within 8 object streams
- 126 named destinations out of 1000 (max. 500000)
- 320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

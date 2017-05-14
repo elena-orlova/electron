@@ -5,4 +5,15 @@ Siegfried Fl{\"u}gge.
 \newblock {\em Practical quantum mechanics}.
 \newblock Springer Science \& Business Media, 2012.
 
+\bibitem{griffiths2016introduction}
+David~J Griffiths.
+\newblock {\em Introduction to quantum mechanics}.
+\newblock Cambridge University Press, 2016.
+
+\bibitem{hamzavi2012approximate}
+M~Hamzavi, M~Movahedi, K-E Thylwe, and AA~Rajabi.
+\newblock Approximate analytical solution of the {Y}ukawa potential with
+  arbitrary angular momenta.
+\newblock {\em Chinese Physics Letters}, 29(8):080302, 2012.
+
 \end{thebibliography}
