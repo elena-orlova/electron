@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  22 MAY 2017 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  22 MAY 2017 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2043,7 +2043,29 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyrh' on input line 66.
 
-No file Present2.aux.
+(./Present2.aux
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 22.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmss.fd
+File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+
+LaTeX Warning: Label `fig1:tan-sqrt' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig1:tan-sqrt' multiply defined.
+
+
+LaTeX Warning: Label `fig:finite_well_sol' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:finite_well_sol' multiply defined.
+
+
+LaTeX Warning: Label `fig:fin_well' multiply defined.
+
+)
 \openout1 = `Present2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -2062,7 +2084,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 66.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 66.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 66.
@@ -2227,12 +2249,6 @@ r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 66.
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 66.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/cyrillic/t2acmss.fd
-File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -2390,14 +2406,14 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 19903 strings out of 493014
- 369096 string characters out of 6133352
- 452413 words of memory out of 5000000
+ 19905 strings out of 493014
+ 369122 string characters out of 6133352
+ 452758 words of memory out of 5000000
  22933 multiletter control sequences out of 15000+600000
  19325 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2417,7 +2433,7 @@ local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on Present2.pdf (16 pages, 237405 bytes).
+Output written on Present2.pdf (16 pages, 236850 bytes).
 PDF statistics:
  765 PDF objects out of 1000 (max. 8388607)
  568 compressed objects within 6 object streams
