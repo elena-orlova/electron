@@ -25,6 +25,7 @@
 \usepackage{ragged2e}
 \justifying
 \usepackage{booktabs}
+\usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{amssymb}
 \usepackage{enumerate}
@@ -66,6 +67,7 @@
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\refname}{References}
 \renewcommand*\contentsname{Contents}
+\usepackage{hyperref}
 
 \pdfsuppresswarningpagegroup=1
 
@@ -83,7 +85,7 @@
 	
 	\begin{center}
 		\large
-		\textbf{Department of Applied Mathematics}		\\[3 cm]
+		\textbf{School of Applied Mathematics}		\\[3 cm]
 	\end{center}
 	
 	
@@ -115,12 +117,14 @@
 
 \tableofcontents
 \pagebreak
+
+
 	
 \section{Introduction}
 
 Solutions of the Shrodinger equation are of great interest in many fields of physics and chemistry.  To find possible energy values of the particle in an exterior potential it is necessary to find eigenvalues of the radial part of the Hamiltonian. It is often impossible to solve this problem analytically in the three-dimension case. \\
 We are interested in finding the particle posssible energy values in some sphericallly symmetric potentials, which describes different types of interactions. For this purpose we construct the  numerical scheme by discretizing the Laplace  operator using the finite differences and solve corresponding eigenvalue problem.\\
-As a result, we have obtained the numerical results for the following potentials:  the infinite spherical potential well; finite spherical potential well; the spherical oscillator potential; the Coulomb potential; the Hulthen potential; the Morse potential; Woods-Saxon potential; Yukawa potential and the deuteron potential. We compared numerical results for all but Woods-Saxon and Yukawa potentials with known analytical solutions \cite{flugge2012practical}. As for the Woods-Saxon potential, for which there is no analytical solution, our results were verified by comparing results of two numerical methods: the extrapolation method and the eigenvalue problem solving one. For the Yukawa potential also there is no exact analytical solution, but we used approximate analytical solution presented in \cite{hamzavi2012approximate} .
+As a result, we have obtained the numerical results for the following potentials:  the infinite spherical potential well; finite spherical potential well; the spherical oscillator potential; the Coulomb potential; the Hulthen potential; the Morse potential; Woods-Saxon potential; Yukawa potential and the deuteron potential. We compared numerical results for all but Woods-Saxon and Yukawa potentials with known analytical solutions \cite{flugge2012practical}. As for the Woods-Saxon potential, for which there is no analytical solution, our results were verified by comparing results of two numerical methods: the extrapolation method and the eigenvalue problem solving one. For the Yukawa potential also there is no exact analytical solution, but we used approximate analytical solution presented in \cite{hamzavi2012approximate}.
 
 
 %We  compared numerical results with the known analytical solutions, for which we use the following source \cite{flugge2012practical}. As for  the Woods-Saxon potential, this results was obtained by the extrapolation method and compared with results from the eigenvalue problem. This result is interesting  from physical point of view since there are no known analytical expression for the energy. For the Yukawa potential  there is no exact analytical solution, however in the paper \cite{hamzavi2012approximate} some approximate analytical solution is found by using the Nikiforov-Uvarov method.  Finally,  the central-force model of deuteron was investigated.
@@ -978,7 +982,7 @@ The evaluation of \eqref{integral} with \eqref{ex_sol_deuteron} has the followin
 Some numerical results: $\widetilde{E}=-2.18 \text{ MeV}$ if $a = 2.18 \text{ fm}$ and $A = 32.7 \text{ MeV}$. The correct value $E = -2.23 \text{ MeV}$ (from \cite{griffiths2016introduction}).
 
 \subsection{Convergence analysis}
-We also investageted the convergence rate correnspondinly to the grid size for the hydrogen atom.  Results are presented in the Figure \ref{h2_grid}. We observed the quadratic convergence. For more detailed information see the section \ref{appendix}.
+As an example of choosing $h$ we also investageted the convergence rate correnspondinly to the grid size for the hydrogen atom.  Results are presented in the Figure \ref{h2_grid}. We observed the quadratic convergence. For more detailed information see the section \ref{appendix}.
 \begin{figure}[h!]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -997,10 +1001,8 @@ We also investageted the convergence rate correnspondinly to the grid size for t
 In this work we have investigated the spectrum problem for an electron in several spherically symmetric potentials by constructing the numerical scheme of solving the eigenvalue problem. We used the second-order discretization scheme for the Hamiltonian operator and solved corresponding eigenvalue problems by various methods. Numerical results obtained by numerical methods were compared with the analytical ones if the latter existed. If analytical solutions for a potential did not exist we compared results obtained from various numerical or approximate methods.\\
 Developed software tools will be used in educational process for students of 'Materials, devices and nanotechnology' master's programme.
 
-
-
 \section{Appendix}\label{appendix}
-The purpose of this section is to expand on some of the techniques and values used in numerical computations. All programs were written in Python 3 using \texttt{numpy} and \texttt{scipy} libraries.
+The purpose of this section is to expand on some of the techniques and values used in numerical computations. All programs were written in Python 3 using \texttt{numpy} and \texttt{scipy} libraries, see \cite{MyCode}.
 \begin{center}
 		\large
 		\textbf{ Infinite spherical well}		\\[0.5 cm]

@@ -1,5 +1,8 @@
 \begin{thebibliography}{1}
 
+\bibitem{MyCode}
+\url{https://github.com/elena-orlova/Potentials/blob/master/Potentials.ipynb}.
+
 \bibitem{flugge2012practical}
 Siegfried Fl{\"u}gge.
 \newblock {\em Practical quantum mechanics}.
