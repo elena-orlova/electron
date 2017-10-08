@@ -5,26 +5,26 @@
 \contentsline {subsection}{\numberline {2.2}Some necessary special functions}{4}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Spherical functions}{4}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Bessel functions}{5}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Angular momentum}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Angular momentum}{5}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Eigenvalues and eigenfunctions}{6}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Spin}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Spin $\frac {1}{2}$}{8}{subsubsection.2.4.1}
-\contentsline {subsection}{\numberline {2.5}Time dependent Schrodinger equation}{8}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Finite difference and eigenvalue problem}{9}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Richardson method}{10}{subsection.2.7}
-\contentsline {section}{\numberline {3}Electron in spherically symmetric potentials}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Spherically potential well}{12}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Infinite spherical well}{12}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Finite spherical well}{13}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Isotropic Harmonic Oscillator}{16}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Hydrogen Atom}{17}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Woods-Saxon potential}{18}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Hulthen Potential}{19}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Morse potential}{20}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Yukawa Potential}{22}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Central-force model of deuteron}{23}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Exact solution}{23}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}Approximate solution}{24}{subsubsection.3.8.2}
-\contentsline {subsection}{\numberline {3.9}Convergence analysis}{24}{subsection.3.9}
-\contentsline {section}{\numberline {4}Conclusion}{25}{section.4}
-\contentsline {section}{\numberline {5}Appendix}{25}{section.5}
+\contentsline {subsection}{\numberline {2.4}Spin}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Spin $\frac {1}{2}$}{7}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.5}Time dependent Schrodinger equation}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Finite difference and eigenvalue problem}{8}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Richardson method}{9}{subsection.2.7}
+\contentsline {section}{\numberline {3}Electron in spherically symmetric potentials}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Spherically potential well}{10}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Infinite spherical well}{10}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Finite spherical well}{11}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Isotropic Harmonic Oscillator}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Hydrogen Atom}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Woods-Saxon potential}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Hulthen Potential}{15}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Morse potential}{16}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Yukawa Potential}{17}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Central-force model of deuteron}{18}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Exact solution}{18}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Approximate solution}{19}{subsubsection.3.8.2}
+\contentsline {subsection}{\numberline {3.9}Convergence analysis}{20}{subsection.3.9}
+\contentsline {section}{\numberline {4}Conclusion}{20}{section.4}
+\contentsline {section}{\numberline {5}Appendix}{20}{section.5}
